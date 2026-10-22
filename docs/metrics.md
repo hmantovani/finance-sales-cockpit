@@ -1,28 +1,44 @@
 # Cockpit questions and metric definitions
 
-## Audience and decisions
+## Audience and questions
 
-The primary user is an owner or operations manager of a small business that sells stocked products on invoice. This cockpit helps them decide which customers to follow up, which orders need attention, and whether cash collection is keeping pace with sales.
+The primary user is an owner or operations manager of a small business selling stocked products on invoice. The expanded cockpit answers:
 
-1. How much invoiced sales occurred in the selected period?
-2. Are sales and cash collections moving together month by month?
-3. Which customers and products contribute most to invoiced sales?
-4. How much is still open on invoices issued in the selected period?
-5. Which open invoices are already overdue, and for how long?
-6. Which processing orders have passed their expected fulfillment date?
+1. How much net merchandise was sold after returns and price credits?
+2. Are cash collections keeping pace with sales after customer refunds?
+3. What gross margin remains after product cost and restockable returns?
+4. Which installment balances are overdue, and how old are they?
+5. Which orders are partly fulfilled or stalled, and how many units remain?
+6. Which products need replenishment, and which reps and regions contribute sales?
+7. Which returns, price adjustments, and shipping credits changed results?
 
-## Rules
+## General rules
 
-All amounts are BRL, stored as integer cents, displayed as reais. The data snapshot is fixed at **2026-10-22**. Dates are calendar dates in the business's local time. The selected period uses inclusive start and end dates. Cancelled and processing orders are excluded from invoiced sales.
+All values are BRL integer cents. The fictional snapshot is fixed at **2026-10-22**. Date filters are inclusive calendar dates. The illustrative flat tax rate is 8%; this is not jurisdictional tax advice. A single invoice covers the fulfilled portion of an order; unfulfilled units remain on the order. Cancelled orders have a reason and no invoice.
 
-- **Invoiced sales:** sum of invoice amounts whose `issue_date` is within the selected period. One invoice per fulfilled order in this demo. Discounts are already reflected in each order item's `line_total_cents`.
-- **Collected cash:** sum of payments whose `payment_date` is within the selected period, regardless of when the related invoice was issued. This is a cash flow measure and need not equal invoiced sales.
-- **Open receivables:** for invoices issued within the selected period, invoice amount less payments received on or before the snapshot date. Future dated payments do not reduce the balance.
-- **Overdue receivables:** open balance on selected invoices with `due_date` before the snapshot date. An invoice due on the snapshot date is not overdue.
-- **Aging buckets:** overdue open balance grouped by calendar days past due: 1–30, 31–60, 61–90, and 91+.
-- **Stalled orders:** processing orders placed in the selected period with `expected_fulfillment_date` before the snapshot date. Cancelled orders are excluded.
-- **Sales by customer or product:** allocate each invoiced order's item line totals to its customer or product. Their grand totals must equal invoiced sales.
+## Sales, cost, and cash
 
-## Controls and details
+- **Net merchandise sales:** merchandise on invoice lines whose invoice issue date is in the selected period, less merchandise on credit notes whose issue date is in the selected period. The credit can relate to an older invoice. Tax and shipping are excluded. Product, customer, region, and rep filters follow the invoice line's order.
+- **Gross margin:** net merchandise sales less product cost on invoice lines issued in the period, plus cost reversed for restockable returns credited in the period. Non-restockable returns do not recover cost. Shipping cost, tax, and overhead are excluded.
+- **Gross margin rate:** gross margin divided by net merchandise sales; zero if sales are zero. A narrow period can show a negative sale or margin when credits occur without new invoices.
+- **Gross billed:** full invoice amount (merchandise + tax + shipping) for invoices issued in the period.
+- **Credits:** full credit-note amount issued in the period, including merchandise, tax, and shipping components. Returns and price/shipping adjustments are separate types.
+- **Net cash collected:** payments received in the period less refunds paid in the period. Cash events can relate to invoices from a different period.
 
-The date range controls invoiced sales, selected invoice balances, and selected orders by issue or order date respectively. Cash collection uses payment date. Customer filter applies to all measures through the related order. Product filter limits sales to matching invoice lines; cash, invoice balances, and orders remain customer level because payments and invoices are not allocated to individual products. The interface explains this when a product is selected. Invoice detail includes due date, balance, days late, and customer. Sales tables show customer and product contributions. An order queue shows stalled processing orders.
+## Receivables and installments
+
+Receivables include invoices issued during the selected period and use all payment, credit, and refund events through the snapshot date. For each invoice:
+
+`open = invoice amount - all credits - all payments + all refunds`
+
+The ledger does not allow a negative open amount. Credits are applied to the latest-due installment first. Net payments (payments less refunds) settle the earliest installment first. **Overdue receivables** sum unpaid installment balances with due dates before the snapshot; an installment due on the snapshot is not overdue. Aging groups these balances by 1–30, 31–60, 61–90, and 91+ calendar days. The invoice table shows the earliest still-unpaid overdue installment and its overdue amount. A refund restores the part of payment that a credit made refundable, so it does not incorrectly reopen a fully settled adjusted invoice.
+
+## Fulfillment and inventory
+
+- **Partial order:** at least one ordered unit has been fulfilled and at least one remains. A processing order has no fulfilled units. A cancelled order has no fulfillment.
+- **Stalled order:** processing or partly fulfilled, placed in the selected period, and expected fulfillment date before the snapshot. Remaining units are ordered less fulfilled quantities.
+- **On-hand stock:** opening units plus all fulfillment and restock movements through the snapshot. **Low stock** means on-hand units are at or below the product's reorder point. Stock is global; customer, region, and rep filters do not narrow it.
+
+## Filters and attribution
+
+Date, customer, region, and representative filters apply to transactions through their orders. The product filter narrows sales, margin, credit notes, and inventory. It does not narrow payments, refunds, receivables, or order status because those facts belong to a whole invoice or order. Payments are allocated across invoice lines in the source data for traceability, but the dashboard does not claim that those allocations identify cash collected for a product.

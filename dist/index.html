@@ -19,6 +19,8 @@
       <a class="nav-link" href="#performance">▥ <span>Sales performance</span></a>
       <a class="nav-link" href="#receivables">◷ <span>Receivables</span></a>
       <a class="nav-link" href="#orders">▤ <span>Order queue</span></a>
+      <a class="nav-link" href="#adjustments">↶ <span>Adjustments</span></a>
+      <a class="nav-link" href="#inventory">▦ <span>Inventory</span></a>
       <div class="side-foot"><div class="side-caption">ABOUT THIS DEMO</div><p>Fictional transactions created for a portfolio case study. Snapshot: <strong>22 Oct 2026</strong>.</p></div>
     </aside>
     <div class="content" id="overview">
@@ -29,28 +31,41 @@
         <label>To<input id="end" type="date" value="2026-10-22" min="2026-01-01" max="2026-10-22"></label>
         <label>Customer<select id="customer"><option value="all">All customers</option></select></label>
         <label>Product<select id="product"><option value="all">All products</option></select></label>
+        <label>Region<select id="region"><option value="all">All regions</option></select></label>
+        <label>Sales rep<select id="rep"><option value="all">All reps</option></select></label>
         <button id="reset" type="button">Reset filters</button>
       </section>
       <p id="filter-error" class="filter-error" role="alert" hidden></p>
-      <p id="product-note" class="product-note" hidden>Product selection changes sales measures only. Invoice balances, collections, and orders remain at customer level.</p>
+      <p id="product-note" class="product-note" hidden>Product selection changes sales, margin, credits, and stock. Invoice balances, collections, refunds, and orders remain at customer level because payments and refunds belong to invoices.</p>
       <div id="loading" class="loading">Loading synthetic transactions…</div>
       <div id="dashboard" hidden>
         <section class="kpis" aria-label="Key performance indicators">
-          <article class="kpi"><span>INVOICED SALES</span><strong id="kpi-sales"></strong><small>Invoices issued in period</small></article>
-          <article class="kpi"><span>COLLECTED CASH</span><strong id="kpi-cash"></strong><small>Payments received in period</small></article>
+          <article class="kpi"><span>NET MERCHANDISE SALES</span><strong id="kpi-sales"></strong><small>Invoiced goods less merchandise credits</small></article>
+          <article class="kpi"><span>NET CASH COLLECTED</span><strong id="kpi-cash"></strong><small>Payments less refunds in period</small></article>
           <article class="kpi attention"><span>OVERDUE RECEIVABLES</span><strong id="kpi-overdue"></strong><small id="overdue-count"></small></article>
-          <article class="kpi"><span>STALLED ORDERS</span><strong id="kpi-stalled"></strong><small>Past expected fulfillment</small></article>
+          <article class="kpi"><span>STALLED ORDERS</span><strong id="kpi-stalled"></strong><small>Processing or partly fulfilled</small></article>
+        </section>
+        <section class="kpis secondary" aria-label="Expanded operating indicators">
+          <article class="kpi"><span>GROSS MARGIN</span><strong id="kpi-margin"></strong><small id="margin-rate"></small></article>
+          <article class="kpi"><span>CREDIT NOTES</span><strong id="kpi-credits"></strong><small id="credit-detail"></small></article>
+          <article class="kpi"><span>PARTIAL ORDERS</span><strong id="kpi-partial"></strong><small>Some units awaiting fulfillment</small></article>
+          <article class="kpi attention"><span>LOW STOCK</span><strong id="kpi-low-stock"></strong><small>Products at or below reorder point</small></article>
         </section>
         <section class="grid-main" id="performance">
-          <article class="panel trend"><div class="panel-head"><div><div class="eyebrow">PERFORMANCE</div><h2>Sales & collections</h2></div><div class="legend"><i class="sales-key"></i> Sales <i class="cash-key"></i> Cash</div></div><p>Monthly invoiced sales compared with cash received</p><div id="trend-chart" class="trend-chart"></div></article>
+          <article class="panel trend"><div class="panel-head"><div><div class="eyebrow">PERFORMANCE</div><h2>Sales & collections</h2></div><div class="legend"><i class="sales-key"></i> Sales <i class="cash-key"></i> Cash</div></div><p>Monthly net merchandise sales compared with net cash received</p><div id="trend-chart" class="trend-chart"></div></article>
           <article class="panel aging"><div class="panel-head"><div><div class="eyebrow">CASH FLOW</div><h2>Receivables aging</h2></div></div><p>Open overdue balance by days past due</p><div id="aging-bars" class="aging-bars"></div><div class="aging-total"><span>Total open receivables</span><strong id="open-total"></strong></div></article>
         </section>
         <section class="grid-bottom">
-          <article class="panel" id="receivables"><div class="panel-head"><div><div class="eyebrow">FOLLOW UP</div><h2>Overdue invoices</h2></div><span id="invoice-count" class="count-pill"></span></div><div class="table-scroll"><table><thead><tr><th>INVOICE / CUSTOMER</th><th>DUE</th><th>DAYS LATE</th><th class="numeric">OPEN BALANCE</th></tr></thead><tbody id="invoice-table"></tbody></table></div><p class="table-note">Showing all matching overdue invoices.</p></article>
-          <article class="panel" id="orders"><div class="panel-head"><div><div class="eyebrow">OPERATIONS</div><h2>Stalled orders</h2></div><span id="order-count" class="count-pill"></span></div><div class="table-scroll"><table><thead><tr><th>ORDER / CUSTOMER</th><th>EXPECTED</th><th class="numeric">DAYS LATE</th></tr></thead><tbody id="order-table"></tbody></table></div><p class="table-note">Processing orders beyond expected fulfillment.</p></article>
+          <article class="panel" id="receivables"><div class="panel-head"><div><div class="eyebrow">FOLLOW UP</div><h2>Overdue invoices</h2></div><span id="invoice-count" class="count-pill"></span></div><div class="table-scroll"><table><thead><tr><th>INVOICE / CUSTOMER</th><th>EARLIEST LATE</th><th>DAYS LATE</th><th class="numeric">OVERDUE</th></tr></thead><tbody id="invoice-table"></tbody></table></div><p class="table-note">Overdue amount follows installment due dates after credits and payments.</p></article>
+          <article class="panel" id="orders"><div class="panel-head"><div><div class="eyebrow">OPERATIONS</div><h2>Stalled orders</h2></div><span id="order-count" class="count-pill"></span></div><div class="table-scroll"><table><thead><tr><th>ORDER / CUSTOMER</th><th>STATUS</th><th>UNITS OPEN</th><th class="numeric">DAYS LATE</th></tr></thead><tbody id="order-table"></tbody></table></div><p class="table-note">Processing and partly fulfilled orders beyond expected fulfillment.</p></article>
+        </section>
+        <section class="grid-bottom" id="adjustments">
+          <article class="panel"><div class="panel-head"><div><div class="eyebrow">AFTER SALE</div><h2>Returns & adjustments</h2></div><span id="adjustment-count" class="count-pill"></span></div><div class="table-scroll"><table><thead><tr><th>CREDIT / CUSTOMER</th><th>REASON</th><th>ISSUED</th><th class="numeric">CREDIT</th></tr></thead><tbody id="adjustment-table"></tbody></table></div><p class="table-note">Credit notes reduce sales or shipping/tax. Refunds reduce collected cash.</p></article>
+          <article class="panel" id="inventory"><div class="panel-head"><div><div class="eyebrow">STOCK CONTROL</div><h2>Inventory watch</h2></div><span id="stock-count" class="count-pill"></span></div><div class="table-scroll"><table><thead><tr><th>PRODUCT</th><th>ON HAND</th><th class="numeric">REORDER AT</th></tr></thead><tbody id="stock-table"></tbody></table></div><p class="table-note">Opening units less fulfillment plus restockable returns.</p></article>
         </section>
         <section class="grid-bottom sales-details"><article class="panel"><div class="panel-head"><div><div class="eyebrow">SALES MIX</div><h2>By customer</h2></div></div><div id="customer-rank" class="rank-list"></div></article><article class="panel"><div class="panel-head"><div><div class="eyebrow">SALES MIX</div><h2>By product</h2></div></div><div id="product-rank" class="rank-list"></div></article></section>
-        <footer>Northstar is a fictional business. All records, names, and values are synthetic. <a href="../docs/metrics.md">Metric definitions</a></footer>
+        <section class="grid-bottom sales-details"><article class="panel"><div class="panel-head"><div><div class="eyebrow">SALES OWNERSHIP</div><h2>By representative</h2></div></div><div id="rep-rank" class="rank-list"></div></article><article class="panel"><div class="panel-head"><div><div class="eyebrow">GEOGRAPHY</div><h2>By region</h2></div></div><div id="region-rank" class="rank-list"></div></article></section>
+        <footer>Northstar is a fictional business. All records, names, and values are synthetic. <a href="methodology.html">Metric definitions</a></footer>
       </div>
     </div>
   </main>

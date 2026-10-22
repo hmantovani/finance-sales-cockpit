@@ -1,21 +1,42 @@
 # Synthetic data model
 
-`python scripts/generate_data.py` writes a deterministic snapshot to `dist/data.json` using seed 1427. All names and transactions are fictional. Regenerating with the same source produces identical JSON.
+`python scripts/generate_data.py` writes `dist/data.json` with seed 1427. The snapshot is fixed at 2026-10-22. All names and transactions are invented; running the generator with the same source reproduces the tracked JSON exactly.
 
 ```mermaid
 erDiagram
   CUSTOMERS ||--o{ ORDERS : places
+  SALES_REPS ||--o{ ORDERS : owns
   ORDERS ||--|{ ORDER_ITEMS : contains
-  PRODUCTS ||--o{ ORDER_ITEMS : appears_in
-  ORDERS ||--o| INVOICES : generates
+  PRODUCTS ||--o{ ORDER_ITEMS : ordered
+  ORDERS ||--o| INVOICES : fulfilled_portion
+  INVOICES ||--|{ INVOICE_LINES : contains
+  INVOICES ||--|{ INSTALLMENTS : due_in
   INVOICES ||--o{ PAYMENTS : receives
+  PAYMENTS ||--|{ PAYMENT_ALLOCATIONS : traced_to
+  INVOICE_LINES ||--o{ PAYMENT_ALLOCATIONS : attributed_to
+  INVOICE_LINES ||--o{ RETURNS : returned
+  INVOICE_LINES ||--o{ CREDIT_NOTES : adjusts
+  CREDIT_NOTES ||--o{ REFUNDS : repaid_by
+  PRODUCTS ||--o{ INVENTORY_MOVEMENTS : changes
 ```
 
-- `customers`: `id` primary key, `name`, `segment`, `city`, `payment_terms_days`.
-- `products`: `id` primary key, `name`, `category`, `unit_price_cents`, `unit_cost_cents`.
-- `orders`: `id` primary key, `customer_id` foreign key, `order_date`, `status` (`fulfilled`, `processing`, `cancelled`), `expected_fulfillment_date`.
-- `order_items`: `order_id` and `product_id` foreign keys, `quantity`, `unit_price_cents`, `discount_percent`, `line_total_cents`.
-- `invoices`: `id` primary key, `order_id` unique foreign key, `issue_date`, `due_date`, `amount_cents`.
-- `payments`: `id` primary key, `invoice_id` foreign key, `payment_date`, `amount_cents`, `method`.
+| Entity | Key fields and purpose |
+| --- | --- |
+| `customers` | `id`, name, segment, city, region, payment terms. |
+| `sales_reps` | `id`, name; owned orders inherit a representative. |
+| `products` | `id`, category, price and unit cost in cents, opening units, reorder point. |
+| `orders` | `id`, customer and rep IDs, dates, status, nullable cancellation reason. |
+| `order_items` | `id`, order and product IDs, ordered and fulfilled quantities, unit price, discount, ordered line total. |
+| `invoices` | `id`, order ID, issue/due dates, merchandise, tax, shipping, gross amount. One per order with fulfilled units. |
+| `invoice_lines` | `id`, invoice and order-item IDs, fulfilled quantity, merchandise, tax, shipping allocation, product cost, gross line amount. |
+| `installments` | `id`, invoice ID, due date, amount. One or two per invoice. |
+| `payments` | `id`, invoice ID, date, amount, method. Some invoices have no payment or partial payment. |
+| `payment_allocations` | Payment and invoice-line IDs, allocated amount. Allocations sum exactly to each payment. |
+| `returns` | `id`, invoice-line ID, date, quantity, reason, restockable flag. |
+| `credit_notes` | `id`, invoice/line IDs, optional return ID, type, component amounts, date. |
+| `refunds` | `id`, invoice and credit-note IDs, date, amount paid back. |
+| `inventory_movements` | `id`, product ID, order or return ID, date, signed unit change, reason. |
 
-Money uses integer cents to avoid floating point errors in totals. Every fulfilled order has one invoice; processing and cancelled orders have none. Some invoices have no payments, some are partly paid, and some are paid after the due date. Several processing orders are past their expected date. This is a deliberately small demonstration model; it does not represent tax, credit notes, returns, or invoice line allocation of cash.
+Money uses integer cents. An invoice equals the sum of its invoice lines and installments. Each invoice line equals merchandise plus tax plus its shipping allocation. Credits never exceed gross invoice value. Payments less refunds never exceed invoice value less credits. The validation script enforces those equalities, foreign keys, payment allocation totals, fulfilled quantities, and nonnegative final stock.
+
+This model illustrates a connected business workflow; it is not a full accounting or inventory ledger. Tax is a flat illustrative rate, shipping cost and overhead are absent, inventory has opening stock rather than purchase receipts, and fulfillment generates one invoice for the fulfilled portion rather than a series of invoices.
