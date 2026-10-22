@@ -1,13 +1,15 @@
 ---
 id: T-0001
 title: Define cockpit KPIs and business questions
-status: todo
+status: done
 priority: high
 created: 2026-10-22
 updated: 2026-10-22
 ---
 
 Define the small-business audience, the decisions the cockpit supports, and the metric definitions.
+
+Completed in `docs/metrics.md`: six business questions, date and balance rules, filter scope, and drill-down definitions.
 
 Acceptance criteria:
 

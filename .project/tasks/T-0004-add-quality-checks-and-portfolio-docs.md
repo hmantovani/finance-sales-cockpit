@@ -1,13 +1,15 @@
 ---
 id: T-0004
 title: Add quality checks and portfolio documentation
-status: todo
+status: done
 priority: medium
 created: 2026-10-22
 updated: 2026-10-22
 ---
 
 Make the project credible and easy to review as a portfolio case study.
+
+Completed with SQLite source reconciliation, Python and Node tests, README walkthrough, metric definitions, and architecture/data-model diagrams.
 
 Acceptance criteria:
 

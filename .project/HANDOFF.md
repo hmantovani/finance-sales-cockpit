@@ -1,21 +1,22 @@
 # Current state
 
-Project initialized from the portfolio brief. The initial delivery outline and four implementation tasks are defined; no application code, data, or dashboard has been created yet.
+The finance and sales cockpit MVP is complete. All four initial tasks are done. It uses a fixed, clearly labeled synthetic snapshot dated 2026-10-22.
 
 ## What works
 
-- The source brief and initial delivery outline define the intended dashboard, deliverables, and quality evidence.
-- The project-hub structure and local Git repository are ready.
+- Run `python -m http.server 8000` from the project root and open `http://localhost:8000/dist/`.
+- The responsive browser dashboard shows invoiced sales, collected cash, overdue receivables, stalled orders, monthly trends, aging, invoice and order queues, and customer/product sales rankings.
+- Date and customer filters apply throughout. Product selection narrows sales only; the interface explains why invoice and cash balances remain customer level.
+- The generator reproduces the tracked dataset. SQLite validation reconciles invoiced item totals with invoice totals.
+- Python and Node tests pass; a local browser visual pass and customer-filter interaction passed.
 
 ## Next steps
 
-1. Complete T-0001: define the dashboard's audience, KPIs, metrics, and business questions.
-2. Complete T-0002: create a documented synthetic data model and dataset generator.
-3. Complete T-0003: implement the dashboard and its customer/product and receivables drill-downs.
-4. Complete T-0004: add reconciliation checks, tests, documentation, architecture diagram, and walkthrough.
+1. Review the dashboard and decide whether the portfolio presentation needs a deployment or additional polish.
+2. If expanding the model, consider returns, credit notes, partial fulfillment, and invoice line allocation of payments as separate tasks.
 
 ## Gotchas
 
-- Keep all demo data synthetic or public and label it as such.
-- Do not represent synthetic results as verified business impact.
-- Keep the first release narrow: one operating view with drill-downs, not a general-purpose ERP clone.
+- Data is fictional and fixed at 2026-10-22; it is not live financial information.
+- Serve over HTTP because the dashboard loads JSON with `fetch`.
+- No remote is configured in this local-only Git repository.
