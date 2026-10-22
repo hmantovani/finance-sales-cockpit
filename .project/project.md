@@ -3,7 +3,7 @@ name: Small-Business Finance & Sales Cockpit
 status: active
 goal: Build a portfolio dashboard that turns synthetic finance and sales data into a clear operating view for small businesses.
 tags: [portfolio, python, sql, dashboard, finance, sales]
-links: []
+links: [https://github.com/hmantovani/finance-sales-cockpit, https://hmantovani.github.io/finance-sales-cockpit/]
 git: local
 ---
 
