@@ -1,0 +1,20 @@
+# Python and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Environment and local tooling
+.env
+.env.*
+.pytest_cache/
+.mypy_cache/
+
+# Generated data and exports
+data/raw/
+data/processed/
+exports/
+
+# OS files
+.DS_Store
+Thumbs.db
