@@ -1,0 +1,4196 @@
+{
+  "meta": {
+    "synthetic": true,
+    "seed": 1427,
+    "as_of": "2026-10-22",
+    "currency": "BRL",
+    "description": "Portfolio demonstration data; no client records."
+  },
+  "customers": [
+    {
+      "id": "C001",
+      "name": "Acme Comércio",
+      "segment": "Retail",
+      "city": "São Paulo",
+      "payment_terms_days": 30
+    },
+    {
+      "id": "C002",
+      "name": "Norte Distribuição",
+      "segment": "Wholesale",
+      "city": "Campinas",
+      "payment_terms_days": 45
+    },
+    {
+      "id": "C003",
+      "name": "Verde Café",
+      "segment": "Hospitality",
+      "city": "Santos",
+      "payment_terms_days": 30
+    },
+    {
+      "id": "C004",
+      "name": "Aurora Papelaria",
+      "segment": "Retail",
+      "city": "Sorocaba",
+      "payment_terms_days": 15
+    },
+    {
+      "id": "C005",
+      "name": "Ponto Central",
+      "segment": "Retail",
+      "city": "Ribeirão Preto",
+      "payment_terms_days": 30
+    },
+    {
+      "id": "C006",
+      "name": "Delta Serviços",
+      "segment": "Services",
+      "city": "São Paulo",
+      "payment_terms_days": 45
+    },
+    {
+      "id": "C007",
+      "name": "Sol Nascente",
+      "segment": "Hospitality",
+      "city": "Campinas",
+      "payment_terms_days": 30
+    },
+    {
+      "id": "C008",
+      "name": "Vértice Office",
+      "segment": "Wholesale",
+      "city": "Santos",
+      "payment_terms_days": 30
+    },
+    {
+      "id": "C009",
+      "name": "Bela Vista",
+      "segment": "Retail",
+      "city": "Sorocaba",
+      "payment_terms_days": 15
+    },
+    {
+      "id": "C010",
+      "name": "Lumen Mercado",
+      "segment": "Retail",
+      "city": "Ribeirão Preto",
+      "payment_terms_days": 30
+    },
+    {
+      "id": "C011",
+      "name": "Estação 12",
+      "segment": "Hospitality",
+      "city": "São Paulo",
+      "payment_terms_days": 45
+    },
+    {
+      "id": "C012",
+      "name": "Nova Forma",
+      "segment": "Services",
+      "city": "Campinas",
+      "payment_terms_days": 30
+    }
+  ],
+  "products": [
+    {
+      "id": "P001",
+      "name": "Café premium 1 kg",
+      "category": "Pantry",
+      "unit_price_cents": 7800,
+      "unit_cost_cents": 4600
+    },
+    {
+      "id": "P002",
+      "name": "Chá seleção",
+      "category": "Pantry",
+      "unit_price_cents": 4200,
+      "unit_cost_cents": 2200
+    },
+    {
+      "id": "P003",
+      "name": "Copo térmico",
+      "category": "Equipment",
+      "unit_price_cents": 8900,
+      "unit_cost_cents": 4800
+    },
+    {
+      "id": "P004",
+      "name": "Filtro industrial",
+      "category": "Equipment",
+      "unit_price_cents": 18000,
+      "unit_cost_cents": 10400
+    },
+    {
+      "id": "P005",
+      "name": "Papel A4 caixa",
+      "category": "Office",
+      "unit_price_cents": 13800,
+      "unit_cost_cents": 9100
+    },
+    {
+      "id": "P006",
+      "name": "Caneta pack",
+      "category": "Office",
+      "unit_price_cents": 5400,
+      "unit_cost_cents": 2900
+    },
+    {
+      "id": "P007",
+      "name": "Organizador",
+      "category": "Office",
+      "unit_price_cents": 11200,
+      "unit_cost_cents": 6500
+    },
+    {
+      "id": "P008",
+      "name": "Kit limpeza",
+      "category": "Supplies",
+      "unit_price_cents": 9600,
+      "unit_cost_cents": 5800
+    }
+  ],
+  "orders": [
+    {
+      "id": "O0001",
+      "customer_id": "C004",
+      "order_date": "2026-01-08",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-01-18"
+    },
+    {
+      "id": "O0002",
+      "customer_id": "C001",
+      "order_date": "2026-07-09",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-21"
+    },
+    {
+      "id": "O0003",
+      "customer_id": "C004",
+      "order_date": "2026-08-24",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-08-31"
+    },
+    {
+      "id": "O0004",
+      "customer_id": "C009",
+      "order_date": "2026-08-06",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-08-16"
+    },
+    {
+      "id": "O0005",
+      "customer_id": "C002",
+      "order_date": "2026-01-14",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-01-19"
+    },
+    {
+      "id": "O0006",
+      "customer_id": "C002",
+      "order_date": "2026-10-10",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-10-22"
+    },
+    {
+      "id": "O0007",
+      "customer_id": "C010",
+      "order_date": "2026-07-15",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-27"
+    },
+    {
+      "id": "O0008",
+      "customer_id": "C001",
+      "order_date": "2026-07-14",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-24"
+    },
+    {
+      "id": "O0009",
+      "customer_id": "C009",
+      "order_date": "2026-09-04",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-09-14"
+    },
+    {
+      "id": "O0010",
+      "customer_id": "C012",
+      "order_date": "2026-02-18",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-25"
+    },
+    {
+      "id": "O0011",
+      "customer_id": "C002",
+      "order_date": "2026-04-12",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-04-17"
+    },
+    {
+      "id": "O0012",
+      "customer_id": "C011",
+      "order_date": "2026-03-16",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-03-25"
+    },
+    {
+      "id": "O0013",
+      "customer_id": "C004",
+      "order_date": "2026-07-17",
+      "status": "processing",
+      "expected_fulfillment_date": "2026-07-25"
+    },
+    {
+      "id": "O0014",
+      "customer_id": "C011",
+      "order_date": "2026-07-03",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-15"
+    },
+    {
+      "id": "O0015",
+      "customer_id": "C010",
+      "order_date": "2026-04-13",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-04-20"
+    },
+    {
+      "id": "O0016",
+      "customer_id": "C009",
+      "order_date": "2026-06-16",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-06-28"
+    },
+    {
+      "id": "O0017",
+      "customer_id": "C005",
+      "order_date": "2026-08-09",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-08-14"
+    },
+    {
+      "id": "O0018",
+      "customer_id": "C012",
+      "order_date": "2026-05-18",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-05-22"
+    },
+    {
+      "id": "O0019",
+      "customer_id": "C004",
+      "order_date": "2026-06-30",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-12"
+    },
+    {
+      "id": "O0020",
+      "customer_id": "C011",
+      "order_date": "2026-09-08",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-09-12"
+    },
+    {
+      "id": "O0021",
+      "customer_id": "C006",
+      "order_date": "2026-05-06",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-05-16"
+    },
+    {
+      "id": "O0022",
+      "customer_id": "C001",
+      "order_date": "2026-04-17",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-04-23"
+    },
+    {
+      "id": "O0023",
+      "customer_id": "C002",
+      "order_date": "2026-05-08",
+      "status": "cancelled",
+      "expected_fulfillment_date": "2026-05-20"
+    },
+    {
+      "id": "O0024",
+      "customer_id": "C002",
+      "order_date": "2026-05-14",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-05-22"
+    },
+    {
+      "id": "O0025",
+      "customer_id": "C002",
+      "order_date": "2026-03-13",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-03-18"
+    },
+    {
+      "id": "O0026",
+      "customer_id": "C003",
+      "order_date": "2026-10-11",
+      "status": "processing",
+      "expected_fulfillment_date": "2026-10-15"
+    },
+    {
+      "id": "O0027",
+      "customer_id": "C003",
+      "order_date": "2026-08-26",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-09-03"
+    },
+    {
+      "id": "O0028",
+      "customer_id": "C002",
+      "order_date": "2026-07-24",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-08-03"
+    },
+    {
+      "id": "O0029",
+      "customer_id": "C001",
+      "order_date": "2026-09-01",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-09-08"
+    },
+    {
+      "id": "O0030",
+      "customer_id": "C005",
+      "order_date": "2026-08-31",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-09-10"
+    },
+    {
+      "id": "O0031",
+      "customer_id": "C002",
+      "order_date": "2026-07-24",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-28"
+    },
+    {
+      "id": "O0032",
+      "customer_id": "C001",
+      "order_date": "2026-09-17",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-09-21"
+    },
+    {
+      "id": "O0033",
+      "customer_id": "C001",
+      "order_date": "2026-01-25",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-02"
+    },
+    {
+      "id": "O0034",
+      "customer_id": "C009",
+      "order_date": "2026-06-02",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-06-14"
+    },
+    {
+      "id": "O0035",
+      "customer_id": "C007",
+      "order_date": "2026-07-03",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-15"
+    },
+    {
+      "id": "O0036",
+      "customer_id": "C006",
+      "order_date": "2026-04-25",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-05-07"
+    },
+    {
+      "id": "O0037",
+      "customer_id": "C001",
+      "order_date": "2026-09-18",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-09-23"
+    },
+    {
+      "id": "O0038",
+      "customer_id": "C007",
+      "order_date": "2026-03-12",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-03-24"
+    },
+    {
+      "id": "O0039",
+      "customer_id": "C001",
+      "order_date": "2026-06-16",
+      "status": "processing",
+      "expected_fulfillment_date": "2026-06-25"
+    },
+    {
+      "id": "O0040",
+      "customer_id": "C007",
+      "order_date": "2026-02-10",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-19"
+    },
+    {
+      "id": "O0041",
+      "customer_id": "C005",
+      "order_date": "2026-05-30",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-06-05"
+    },
+    {
+      "id": "O0042",
+      "customer_id": "C002",
+      "order_date": "2026-05-21",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-05-28"
+    },
+    {
+      "id": "O0043",
+      "customer_id": "C012",
+      "order_date": "2026-09-30",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-10-09"
+    },
+    {
+      "id": "O0044",
+      "customer_id": "C010",
+      "order_date": "2026-03-25",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-04-05"
+    },
+    {
+      "id": "O0045",
+      "customer_id": "C002",
+      "order_date": "2026-07-22",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-08-02"
+    },
+    {
+      "id": "O0046",
+      "customer_id": "C011",
+      "order_date": "2026-06-01",
+      "status": "cancelled",
+      "expected_fulfillment_date": "2026-06-11"
+    },
+    {
+      "id": "O0047",
+      "customer_id": "C005",
+      "order_date": "2026-07-16",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-20"
+    },
+    {
+      "id": "O0048",
+      "customer_id": "C001",
+      "order_date": "2026-02-17",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-26"
+    },
+    {
+      "id": "O0049",
+      "customer_id": "C011",
+      "order_date": "2026-06-01",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-06-09"
+    },
+    {
+      "id": "O0050",
+      "customer_id": "C009",
+      "order_date": "2026-02-13",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-17"
+    },
+    {
+      "id": "O0051",
+      "customer_id": "C008",
+      "order_date": "2026-10-10",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-10-17"
+    },
+    {
+      "id": "O0052",
+      "customer_id": "C005",
+      "order_date": "2026-07-05",
+      "status": "processing",
+      "expected_fulfillment_date": "2026-07-15"
+    },
+    {
+      "id": "O0053",
+      "customer_id": "C009",
+      "order_date": "2026-04-25",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-05-03"
+    },
+    {
+      "id": "O0054",
+      "customer_id": "C007",
+      "order_date": "2026-07-21",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-28"
+    },
+    {
+      "id": "O0055",
+      "customer_id": "C011",
+      "order_date": "2026-05-06",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-05-15"
+    },
+    {
+      "id": "O0056",
+      "customer_id": "C011",
+      "order_date": "2026-07-17",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-24"
+    },
+    {
+      "id": "O0057",
+      "customer_id": "C011",
+      "order_date": "2026-02-06",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-14"
+    },
+    {
+      "id": "O0058",
+      "customer_id": "C005",
+      "order_date": "2026-07-22",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-28"
+    },
+    {
+      "id": "O0059",
+      "customer_id": "C010",
+      "order_date": "2026-02-13",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-17"
+    },
+    {
+      "id": "O0060",
+      "customer_id": "C005",
+      "order_date": "2026-04-01",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-04-09"
+    },
+    {
+      "id": "O0061",
+      "customer_id": "C005",
+      "order_date": "2026-03-04",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-03-15"
+    },
+    {
+      "id": "O0062",
+      "customer_id": "C002",
+      "order_date": "2026-08-23",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-08-27"
+    },
+    {
+      "id": "O0063",
+      "customer_id": "C008",
+      "order_date": "2026-03-02",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-03-10"
+    },
+    {
+      "id": "O0064",
+      "customer_id": "C008",
+      "order_date": "2026-03-22",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-03-27"
+    },
+    {
+      "id": "O0065",
+      "customer_id": "C008",
+      "order_date": "2026-08-18",
+      "status": "processing",
+      "expected_fulfillment_date": "2026-08-22"
+    },
+    {
+      "id": "O0066",
+      "customer_id": "C003",
+      "order_date": "2026-01-20",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-01"
+    },
+    {
+      "id": "O0067",
+      "customer_id": "C003",
+      "order_date": "2026-07-31",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-08-05"
+    },
+    {
+      "id": "O0068",
+      "customer_id": "C012",
+      "order_date": "2026-03-21",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-03-26"
+    },
+    {
+      "id": "O0069",
+      "customer_id": "C006",
+      "order_date": "2026-05-18",
+      "status": "cancelled",
+      "expected_fulfillment_date": "2026-05-24"
+    },
+    {
+      "id": "O0070",
+      "customer_id": "C004",
+      "order_date": "2026-09-05",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-09-10"
+    },
+    {
+      "id": "O0071",
+      "customer_id": "C010",
+      "order_date": "2026-07-12",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-19"
+    },
+    {
+      "id": "O0072",
+      "customer_id": "C002",
+      "order_date": "2026-01-08",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-01-12"
+    },
+    {
+      "id": "O0073",
+      "customer_id": "C005",
+      "order_date": "2026-07-28",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-08-02"
+    },
+    {
+      "id": "O0074",
+      "customer_id": "C012",
+      "order_date": "2026-08-21",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-08-25"
+    },
+    {
+      "id": "O0075",
+      "customer_id": "C007",
+      "order_date": "2026-04-02",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-04-13"
+    },
+    {
+      "id": "O0076",
+      "customer_id": "C002",
+      "order_date": "2026-10-05",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-10-09"
+    },
+    {
+      "id": "O0077",
+      "customer_id": "C012",
+      "order_date": "2026-01-09",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-01-21"
+    },
+    {
+      "id": "O0078",
+      "customer_id": "C006",
+      "order_date": "2026-07-17",
+      "status": "processing",
+      "expected_fulfillment_date": "2026-07-21"
+    },
+    {
+      "id": "O0079",
+      "customer_id": "C011",
+      "order_date": "2026-09-24",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-09-29"
+    },
+    {
+      "id": "O0080",
+      "customer_id": "C005",
+      "order_date": "2026-05-16",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-05-20"
+    },
+    {
+      "id": "O0081",
+      "customer_id": "C004",
+      "order_date": "2026-09-11",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-09-18"
+    },
+    {
+      "id": "O0082",
+      "customer_id": "C004",
+      "order_date": "2026-02-24",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-03-01"
+    },
+    {
+      "id": "O0083",
+      "customer_id": "C010",
+      "order_date": "2026-07-11",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-20"
+    },
+    {
+      "id": "O0084",
+      "customer_id": "C004",
+      "order_date": "2026-09-16",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-09-24"
+    },
+    {
+      "id": "O0085",
+      "customer_id": "C009",
+      "order_date": "2026-04-01",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-04-13"
+    },
+    {
+      "id": "O0086",
+      "customer_id": "C002",
+      "order_date": "2026-02-21",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-27"
+    },
+    {
+      "id": "O0087",
+      "customer_id": "C005",
+      "order_date": "2026-02-13",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-24"
+    },
+    {
+      "id": "O0088",
+      "customer_id": "C003",
+      "order_date": "2026-04-14",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-04-23"
+    },
+    {
+      "id": "O0089",
+      "customer_id": "C001",
+      "order_date": "2026-08-19",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-08-24"
+    },
+    {
+      "id": "O0090",
+      "customer_id": "C004",
+      "order_date": "2026-02-06",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-17"
+    },
+    {
+      "id": "O0091",
+      "customer_id": "C002",
+      "order_date": "2026-07-27",
+      "status": "processing",
+      "expected_fulfillment_date": "2026-08-04"
+    },
+    {
+      "id": "O0092",
+      "customer_id": "C005",
+      "order_date": "2026-04-30",
+      "status": "cancelled",
+      "expected_fulfillment_date": "2026-05-04"
+    },
+    {
+      "id": "O0093",
+      "customer_id": "C008",
+      "order_date": "2026-03-05",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-03-09"
+    },
+    {
+      "id": "O0094",
+      "customer_id": "C010",
+      "order_date": "2026-05-14",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-05-18"
+    },
+    {
+      "id": "O0095",
+      "customer_id": "C003",
+      "order_date": "2026-04-18",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-04-28"
+    },
+    {
+      "id": "O0096",
+      "customer_id": "C009",
+      "order_date": "2026-07-22",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-31"
+    },
+    {
+      "id": "O0097",
+      "customer_id": "C010",
+      "order_date": "2026-06-23",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-01"
+    },
+    {
+      "id": "O0098",
+      "customer_id": "C002",
+      "order_date": "2026-02-23",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-28"
+    },
+    {
+      "id": "O0099",
+      "customer_id": "C004",
+      "order_date": "2026-01-25",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-02"
+    },
+    {
+      "id": "O0100",
+      "customer_id": "C005",
+      "order_date": "2026-02-10",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-18"
+    },
+    {
+      "id": "O0101",
+      "customer_id": "C005",
+      "order_date": "2026-05-03",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-05-15"
+    },
+    {
+      "id": "O0102",
+      "customer_id": "C004",
+      "order_date": "2026-10-02",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-10-13"
+    },
+    {
+      "id": "O0103",
+      "customer_id": "C002",
+      "order_date": "2026-09-26",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-10-08"
+    },
+    {
+      "id": "O0104",
+      "customer_id": "C007",
+      "order_date": "2026-07-10",
+      "status": "processing",
+      "expected_fulfillment_date": "2026-07-16"
+    },
+    {
+      "id": "O0105",
+      "customer_id": "C007",
+      "order_date": "2026-03-12",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-03-23"
+    },
+    {
+      "id": "O0106",
+      "customer_id": "C004",
+      "order_date": "2026-05-28",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-06-09"
+    },
+    {
+      "id": "O0107",
+      "customer_id": "C001",
+      "order_date": "2026-05-01",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-05-13"
+    },
+    {
+      "id": "O0108",
+      "customer_id": "C006",
+      "order_date": "2026-03-12",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-03-20"
+    },
+    {
+      "id": "O0109",
+      "customer_id": "C010",
+      "order_date": "2026-02-04",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-16"
+    },
+    {
+      "id": "O0110",
+      "customer_id": "C007",
+      "order_date": "2026-08-29",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-09-07"
+    },
+    {
+      "id": "O0111",
+      "customer_id": "C001",
+      "order_date": "2026-06-24",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-05"
+    },
+    {
+      "id": "O0112",
+      "customer_id": "C011",
+      "order_date": "2026-08-21",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-08-28"
+    },
+    {
+      "id": "O0113",
+      "customer_id": "C001",
+      "order_date": "2026-10-16",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-10-25"
+    },
+    {
+      "id": "O0114",
+      "customer_id": "C004",
+      "order_date": "2026-02-11",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-02-18"
+    },
+    {
+      "id": "O0115",
+      "customer_id": "C009",
+      "order_date": "2026-01-11",
+      "status": "cancelled",
+      "expected_fulfillment_date": "2026-01-21"
+    },
+    {
+      "id": "O0116",
+      "customer_id": "C007",
+      "order_date": "2026-03-15",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-03-26"
+    },
+    {
+      "id": "O0117",
+      "customer_id": "C004",
+      "order_date": "2026-04-02",
+      "status": "processing",
+      "expected_fulfillment_date": "2026-04-06"
+    },
+    {
+      "id": "O0118",
+      "customer_id": "C006",
+      "order_date": "2026-07-05",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-07-10"
+    },
+    {
+      "id": "O0119",
+      "customer_id": "C004",
+      "order_date": "2026-10-10",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-10-17"
+    },
+    {
+      "id": "O0120",
+      "customer_id": "C010",
+      "order_date": "2026-08-31",
+      "status": "fulfilled",
+      "expected_fulfillment_date": "2026-09-10"
+    }
+  ],
+  "order_items": [
+    {
+      "order_id": "O0001",
+      "product_id": "P007",
+      "quantity": 3,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 33600
+    },
+    {
+      "order_id": "O0001",
+      "product_id": "P005",
+      "quantity": 15,
+      "unit_price_cents": 13800,
+      "discount_percent": 10,
+      "line_total_cents": 186300
+    },
+    {
+      "order_id": "O0001",
+      "product_id": "P002",
+      "quantity": 4,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 16800
+    },
+    {
+      "order_id": "O0002",
+      "product_id": "P008",
+      "quantity": 15,
+      "unit_price_cents": 9600,
+      "discount_percent": 5,
+      "line_total_cents": 136800
+    },
+    {
+      "order_id": "O0003",
+      "product_id": "P002",
+      "quantity": 5,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 21000
+    },
+    {
+      "order_id": "O0003",
+      "product_id": "P007",
+      "quantity": 2,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 22400
+    },
+    {
+      "order_id": "O0004",
+      "product_id": "P002",
+      "quantity": 2,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 8400
+    },
+    {
+      "order_id": "O0005",
+      "product_id": "P006",
+      "quantity": 13,
+      "unit_price_cents": 5400,
+      "discount_percent": 5,
+      "line_total_cents": 66690
+    },
+    {
+      "order_id": "O0005",
+      "product_id": "P005",
+      "quantity": 11,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 151800
+    },
+    {
+      "order_id": "O0006",
+      "product_id": "P007",
+      "quantity": 8,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 89600
+    },
+    {
+      "order_id": "O0006",
+      "product_id": "P008",
+      "quantity": 11,
+      "unit_price_cents": 9600,
+      "discount_percent": 5,
+      "line_total_cents": 100320
+    },
+    {
+      "order_id": "O0006",
+      "product_id": "P003",
+      "quantity": 15,
+      "unit_price_cents": 8900,
+      "discount_percent": 10,
+      "line_total_cents": 120150
+    },
+    {
+      "order_id": "O0007",
+      "product_id": "P004",
+      "quantity": 6,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 108000
+    },
+    {
+      "order_id": "O0008",
+      "product_id": "P006",
+      "quantity": 9,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 48600
+    },
+    {
+      "order_id": "O0008",
+      "product_id": "P001",
+      "quantity": 5,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 39000
+    },
+    {
+      "order_id": "O0009",
+      "product_id": "P007",
+      "quantity": 13,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 145600
+    },
+    {
+      "order_id": "O0009",
+      "product_id": "P008",
+      "quantity": 10,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 96000
+    },
+    {
+      "order_id": "O0009",
+      "product_id": "P002",
+      "quantity": 8,
+      "unit_price_cents": 4200,
+      "discount_percent": 10,
+      "line_total_cents": 30240
+    },
+    {
+      "order_id": "O0010",
+      "product_id": "P007",
+      "quantity": 9,
+      "unit_price_cents": 11200,
+      "discount_percent": 10,
+      "line_total_cents": 90720
+    },
+    {
+      "order_id": "O0010",
+      "product_id": "P008",
+      "quantity": 9,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 86400
+    },
+    {
+      "order_id": "O0011",
+      "product_id": "P007",
+      "quantity": 14,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 156800
+    },
+    {
+      "order_id": "O0012",
+      "product_id": "P001",
+      "quantity": 12,
+      "unit_price_cents": 7800,
+      "discount_percent": 10,
+      "line_total_cents": 84240
+    },
+    {
+      "order_id": "O0012",
+      "product_id": "P008",
+      "quantity": 8,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 76800
+    },
+    {
+      "order_id": "O0013",
+      "product_id": "P005",
+      "quantity": 15,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 207000
+    },
+    {
+      "order_id": "O0014",
+      "product_id": "P005",
+      "quantity": 2,
+      "unit_price_cents": 13800,
+      "discount_percent": 10,
+      "line_total_cents": 24840
+    },
+    {
+      "order_id": "O0015",
+      "product_id": "P007",
+      "quantity": 8,
+      "unit_price_cents": 11200,
+      "discount_percent": 5,
+      "line_total_cents": 85120
+    },
+    {
+      "order_id": "O0015",
+      "product_id": "P005",
+      "quantity": 5,
+      "unit_price_cents": 13800,
+      "discount_percent": 5,
+      "line_total_cents": 65550
+    },
+    {
+      "order_id": "O0015",
+      "product_id": "P004",
+      "quantity": 15,
+      "unit_price_cents": 18000,
+      "discount_percent": 10,
+      "line_total_cents": 243000
+    },
+    {
+      "order_id": "O0016",
+      "product_id": "P003",
+      "quantity": 10,
+      "unit_price_cents": 8900,
+      "discount_percent": 10,
+      "line_total_cents": 80100
+    },
+    {
+      "order_id": "O0016",
+      "product_id": "P008",
+      "quantity": 8,
+      "unit_price_cents": 9600,
+      "discount_percent": 10,
+      "line_total_cents": 69120
+    },
+    {
+      "order_id": "O0016",
+      "product_id": "P006",
+      "quantity": 7,
+      "unit_price_cents": 5400,
+      "discount_percent": 5,
+      "line_total_cents": 35910
+    },
+    {
+      "order_id": "O0017",
+      "product_id": "P007",
+      "quantity": 10,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 112000
+    },
+    {
+      "order_id": "O0017",
+      "product_id": "P005",
+      "quantity": 15,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 207000
+    },
+    {
+      "order_id": "O0018",
+      "product_id": "P008",
+      "quantity": 5,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 48000
+    },
+    {
+      "order_id": "O0018",
+      "product_id": "P002",
+      "quantity": 6,
+      "unit_price_cents": 4200,
+      "discount_percent": 10,
+      "line_total_cents": 22680
+    },
+    {
+      "order_id": "O0019",
+      "product_id": "P002",
+      "quantity": 3,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 12600
+    },
+    {
+      "order_id": "O0019",
+      "product_id": "P008",
+      "quantity": 2,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 19200
+    },
+    {
+      "order_id": "O0019",
+      "product_id": "P005",
+      "quantity": 10,
+      "unit_price_cents": 13800,
+      "discount_percent": 5,
+      "line_total_cents": 131100
+    },
+    {
+      "order_id": "O0020",
+      "product_id": "P007",
+      "quantity": 10,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 112000
+    },
+    {
+      "order_id": "O0020",
+      "product_id": "P002",
+      "quantity": 11,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 46200
+    },
+    {
+      "order_id": "O0020",
+      "product_id": "P006",
+      "quantity": 11,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 59400
+    },
+    {
+      "order_id": "O0021",
+      "product_id": "P004",
+      "quantity": 3,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 54000
+    },
+    {
+      "order_id": "O0022",
+      "product_id": "P001",
+      "quantity": 15,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 117000
+    },
+    {
+      "order_id": "O0022",
+      "product_id": "P003",
+      "quantity": 2,
+      "unit_price_cents": 8900,
+      "discount_percent": 5,
+      "line_total_cents": 16910
+    },
+    {
+      "order_id": "O0023",
+      "product_id": "P003",
+      "quantity": 4,
+      "unit_price_cents": 8900,
+      "discount_percent": 5,
+      "line_total_cents": 33820
+    },
+    {
+      "order_id": "O0024",
+      "product_id": "P008",
+      "quantity": 7,
+      "unit_price_cents": 9600,
+      "discount_percent": 5,
+      "line_total_cents": 63840
+    },
+    {
+      "order_id": "O0024",
+      "product_id": "P006",
+      "quantity": 15,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 81000
+    },
+    {
+      "order_id": "O0025",
+      "product_id": "P004",
+      "quantity": 7,
+      "unit_price_cents": 18000,
+      "discount_percent": 5,
+      "line_total_cents": 119700
+    },
+    {
+      "order_id": "O0026",
+      "product_id": "P006",
+      "quantity": 4,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 21600
+    },
+    {
+      "order_id": "O0026",
+      "product_id": "P008",
+      "quantity": 15,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 144000
+    },
+    {
+      "order_id": "O0026",
+      "product_id": "P005",
+      "quantity": 12,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 165600
+    },
+    {
+      "order_id": "O0027",
+      "product_id": "P003",
+      "quantity": 3,
+      "unit_price_cents": 8900,
+      "discount_percent": 0,
+      "line_total_cents": 26700
+    },
+    {
+      "order_id": "O0027",
+      "product_id": "P001",
+      "quantity": 12,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 93600
+    },
+    {
+      "order_id": "O0027",
+      "product_id": "P006",
+      "quantity": 10,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 54000
+    },
+    {
+      "order_id": "O0028",
+      "product_id": "P004",
+      "quantity": 7,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 126000
+    },
+    {
+      "order_id": "O0029",
+      "product_id": "P007",
+      "quantity": 11,
+      "unit_price_cents": 11200,
+      "discount_percent": 10,
+      "line_total_cents": 110880
+    },
+    {
+      "order_id": "O0030",
+      "product_id": "P001",
+      "quantity": 13,
+      "unit_price_cents": 7800,
+      "discount_percent": 10,
+      "line_total_cents": 91260
+    },
+    {
+      "order_id": "O0031",
+      "product_id": "P002",
+      "quantity": 4,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 16800
+    },
+    {
+      "order_id": "O0032",
+      "product_id": "P002",
+      "quantity": 11,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 46200
+    },
+    {
+      "order_id": "O0032",
+      "product_id": "P005",
+      "quantity": 5,
+      "unit_price_cents": 13800,
+      "discount_percent": 5,
+      "line_total_cents": 65550
+    },
+    {
+      "order_id": "O0032",
+      "product_id": "P008",
+      "quantity": 10,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 96000
+    },
+    {
+      "order_id": "O0033",
+      "product_id": "P002",
+      "quantity": 4,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 16800
+    },
+    {
+      "order_id": "O0033",
+      "product_id": "P001",
+      "quantity": 15,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 117000
+    },
+    {
+      "order_id": "O0034",
+      "product_id": "P004",
+      "quantity": 7,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 126000
+    },
+    {
+      "order_id": "O0034",
+      "product_id": "P002",
+      "quantity": 13,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 54600
+    },
+    {
+      "order_id": "O0034",
+      "product_id": "P001",
+      "quantity": 5,
+      "unit_price_cents": 7800,
+      "discount_percent": 10,
+      "line_total_cents": 35100
+    },
+    {
+      "order_id": "O0035",
+      "product_id": "P008",
+      "quantity": 13,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 124800
+    },
+    {
+      "order_id": "O0035",
+      "product_id": "P006",
+      "quantity": 2,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 10800
+    },
+    {
+      "order_id": "O0035",
+      "product_id": "P001",
+      "quantity": 11,
+      "unit_price_cents": 7800,
+      "discount_percent": 10,
+      "line_total_cents": 77220
+    },
+    {
+      "order_id": "O0036",
+      "product_id": "P002",
+      "quantity": 15,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 63000
+    },
+    {
+      "order_id": "O0036",
+      "product_id": "P005",
+      "quantity": 14,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 193200
+    },
+    {
+      "order_id": "O0037",
+      "product_id": "P008",
+      "quantity": 6,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 57600
+    },
+    {
+      "order_id": "O0038",
+      "product_id": "P005",
+      "quantity": 10,
+      "unit_price_cents": 13800,
+      "discount_percent": 10,
+      "line_total_cents": 124200
+    },
+    {
+      "order_id": "O0038",
+      "product_id": "P003",
+      "quantity": 11,
+      "unit_price_cents": 8900,
+      "discount_percent": 5,
+      "line_total_cents": 93005
+    },
+    {
+      "order_id": "O0039",
+      "product_id": "P001",
+      "quantity": 8,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 62400
+    },
+    {
+      "order_id": "O0039",
+      "product_id": "P008",
+      "quantity": 6,
+      "unit_price_cents": 9600,
+      "discount_percent": 5,
+      "line_total_cents": 54720
+    },
+    {
+      "order_id": "O0039",
+      "product_id": "P002",
+      "quantity": 8,
+      "unit_price_cents": 4200,
+      "discount_percent": 5,
+      "line_total_cents": 31920
+    },
+    {
+      "order_id": "O0040",
+      "product_id": "P005",
+      "quantity": 15,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 207000
+    },
+    {
+      "order_id": "O0040",
+      "product_id": "P008",
+      "quantity": 6,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 57600
+    },
+    {
+      "order_id": "O0041",
+      "product_id": "P004",
+      "quantity": 14,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 252000
+    },
+    {
+      "order_id": "O0041",
+      "product_id": "P008",
+      "quantity": 2,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 19200
+    },
+    {
+      "order_id": "O0042",
+      "product_id": "P002",
+      "quantity": 11,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 46200
+    },
+    {
+      "order_id": "O0042",
+      "product_id": "P008",
+      "quantity": 13,
+      "unit_price_cents": 9600,
+      "discount_percent": 10,
+      "line_total_cents": 112320
+    },
+    {
+      "order_id": "O0042",
+      "product_id": "P001",
+      "quantity": 8,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 62400
+    },
+    {
+      "order_id": "O0043",
+      "product_id": "P003",
+      "quantity": 14,
+      "unit_price_cents": 8900,
+      "discount_percent": 10,
+      "line_total_cents": 112140
+    },
+    {
+      "order_id": "O0044",
+      "product_id": "P001",
+      "quantity": 15,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 117000
+    },
+    {
+      "order_id": "O0045",
+      "product_id": "P005",
+      "quantity": 4,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 55200
+    },
+    {
+      "order_id": "O0045",
+      "product_id": "P007",
+      "quantity": 8,
+      "unit_price_cents": 11200,
+      "discount_percent": 10,
+      "line_total_cents": 80640
+    },
+    {
+      "order_id": "O0046",
+      "product_id": "P005",
+      "quantity": 10,
+      "unit_price_cents": 13800,
+      "discount_percent": 5,
+      "line_total_cents": 131100
+    },
+    {
+      "order_id": "O0046",
+      "product_id": "P008",
+      "quantity": 10,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 96000
+    },
+    {
+      "order_id": "O0047",
+      "product_id": "P001",
+      "quantity": 10,
+      "unit_price_cents": 7800,
+      "discount_percent": 10,
+      "line_total_cents": 70200
+    },
+    {
+      "order_id": "O0048",
+      "product_id": "P002",
+      "quantity": 10,
+      "unit_price_cents": 4200,
+      "discount_percent": 5,
+      "line_total_cents": 39900
+    },
+    {
+      "order_id": "O0048",
+      "product_id": "P003",
+      "quantity": 15,
+      "unit_price_cents": 8900,
+      "discount_percent": 10,
+      "line_total_cents": 120150
+    },
+    {
+      "order_id": "O0048",
+      "product_id": "P005",
+      "quantity": 9,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 124200
+    },
+    {
+      "order_id": "O0049",
+      "product_id": "P005",
+      "quantity": 10,
+      "unit_price_cents": 13800,
+      "discount_percent": 5,
+      "line_total_cents": 131100
+    },
+    {
+      "order_id": "O0050",
+      "product_id": "P004",
+      "quantity": 8,
+      "unit_price_cents": 18000,
+      "discount_percent": 10,
+      "line_total_cents": 129600
+    },
+    {
+      "order_id": "O0051",
+      "product_id": "P002",
+      "quantity": 6,
+      "unit_price_cents": 4200,
+      "discount_percent": 5,
+      "line_total_cents": 23940
+    },
+    {
+      "order_id": "O0051",
+      "product_id": "P004",
+      "quantity": 6,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 108000
+    },
+    {
+      "order_id": "O0051",
+      "product_id": "P007",
+      "quantity": 11,
+      "unit_price_cents": 11200,
+      "discount_percent": 10,
+      "line_total_cents": 110880
+    },
+    {
+      "order_id": "O0052",
+      "product_id": "P006",
+      "quantity": 3,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 16200
+    },
+    {
+      "order_id": "O0052",
+      "product_id": "P005",
+      "quantity": 6,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 82800
+    },
+    {
+      "order_id": "O0052",
+      "product_id": "P007",
+      "quantity": 12,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 134400
+    },
+    {
+      "order_id": "O0053",
+      "product_id": "P001",
+      "quantity": 12,
+      "unit_price_cents": 7800,
+      "discount_percent": 5,
+      "line_total_cents": 88920
+    },
+    {
+      "order_id": "O0053",
+      "product_id": "P005",
+      "quantity": 7,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 96600
+    },
+    {
+      "order_id": "O0054",
+      "product_id": "P002",
+      "quantity": 3,
+      "unit_price_cents": 4200,
+      "discount_percent": 5,
+      "line_total_cents": 11970
+    },
+    {
+      "order_id": "O0054",
+      "product_id": "P001",
+      "quantity": 2,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 15600
+    },
+    {
+      "order_id": "O0054",
+      "product_id": "P003",
+      "quantity": 2,
+      "unit_price_cents": 8900,
+      "discount_percent": 5,
+      "line_total_cents": 16910
+    },
+    {
+      "order_id": "O0055",
+      "product_id": "P008",
+      "quantity": 3,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 28800
+    },
+    {
+      "order_id": "O0055",
+      "product_id": "P005",
+      "quantity": 13,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 179400
+    },
+    {
+      "order_id": "O0055",
+      "product_id": "P006",
+      "quantity": 3,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 16200
+    },
+    {
+      "order_id": "O0056",
+      "product_id": "P002",
+      "quantity": 10,
+      "unit_price_cents": 4200,
+      "discount_percent": 10,
+      "line_total_cents": 37800
+    },
+    {
+      "order_id": "O0056",
+      "product_id": "P004",
+      "quantity": 10,
+      "unit_price_cents": 18000,
+      "discount_percent": 10,
+      "line_total_cents": 162000
+    },
+    {
+      "order_id": "O0057",
+      "product_id": "P005",
+      "quantity": 14,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 193200
+    },
+    {
+      "order_id": "O0057",
+      "product_id": "P001",
+      "quantity": 14,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 109200
+    },
+    {
+      "order_id": "O0058",
+      "product_id": "P003",
+      "quantity": 3,
+      "unit_price_cents": 8900,
+      "discount_percent": 0,
+      "line_total_cents": 26700
+    },
+    {
+      "order_id": "O0059",
+      "product_id": "P004",
+      "quantity": 11,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 198000
+    },
+    {
+      "order_id": "O0059",
+      "product_id": "P003",
+      "quantity": 14,
+      "unit_price_cents": 8900,
+      "discount_percent": 0,
+      "line_total_cents": 124600
+    },
+    {
+      "order_id": "O0060",
+      "product_id": "P007",
+      "quantity": 9,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 100800
+    },
+    {
+      "order_id": "O0061",
+      "product_id": "P001",
+      "quantity": 2,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 15600
+    },
+    {
+      "order_id": "O0061",
+      "product_id": "P006",
+      "quantity": 8,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 43200
+    },
+    {
+      "order_id": "O0062",
+      "product_id": "P008",
+      "quantity": 4,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 38400
+    },
+    {
+      "order_id": "O0062",
+      "product_id": "P002",
+      "quantity": 8,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 33600
+    },
+    {
+      "order_id": "O0063",
+      "product_id": "P008",
+      "quantity": 2,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 19200
+    },
+    {
+      "order_id": "O0063",
+      "product_id": "P003",
+      "quantity": 5,
+      "unit_price_cents": 8900,
+      "discount_percent": 10,
+      "line_total_cents": 40050
+    },
+    {
+      "order_id": "O0063",
+      "product_id": "P005",
+      "quantity": 9,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 124200
+    },
+    {
+      "order_id": "O0064",
+      "product_id": "P001",
+      "quantity": 13,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 101400
+    },
+    {
+      "order_id": "O0064",
+      "product_id": "P006",
+      "quantity": 9,
+      "unit_price_cents": 5400,
+      "discount_percent": 10,
+      "line_total_cents": 43740
+    },
+    {
+      "order_id": "O0065",
+      "product_id": "P003",
+      "quantity": 12,
+      "unit_price_cents": 8900,
+      "discount_percent": 0,
+      "line_total_cents": 106800
+    },
+    {
+      "order_id": "O0065",
+      "product_id": "P002",
+      "quantity": 6,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 25200
+    },
+    {
+      "order_id": "O0065",
+      "product_id": "P008",
+      "quantity": 2,
+      "unit_price_cents": 9600,
+      "discount_percent": 5,
+      "line_total_cents": 18240
+    },
+    {
+      "order_id": "O0066",
+      "product_id": "P002",
+      "quantity": 4,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 16800
+    },
+    {
+      "order_id": "O0066",
+      "product_id": "P005",
+      "quantity": 14,
+      "unit_price_cents": 13800,
+      "discount_percent": 5,
+      "line_total_cents": 183540
+    },
+    {
+      "order_id": "O0066",
+      "product_id": "P007",
+      "quantity": 2,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 22400
+    },
+    {
+      "order_id": "O0067",
+      "product_id": "P008",
+      "quantity": 7,
+      "unit_price_cents": 9600,
+      "discount_percent": 5,
+      "line_total_cents": 63840
+    },
+    {
+      "order_id": "O0067",
+      "product_id": "P003",
+      "quantity": 9,
+      "unit_price_cents": 8900,
+      "discount_percent": 0,
+      "line_total_cents": 80100
+    },
+    {
+      "order_id": "O0067",
+      "product_id": "P005",
+      "quantity": 4,
+      "unit_price_cents": 13800,
+      "discount_percent": 10,
+      "line_total_cents": 49680
+    },
+    {
+      "order_id": "O0068",
+      "product_id": "P004",
+      "quantity": 6,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 108000
+    },
+    {
+      "order_id": "O0069",
+      "product_id": "P004",
+      "quantity": 6,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 108000
+    },
+    {
+      "order_id": "O0069",
+      "product_id": "P002",
+      "quantity": 10,
+      "unit_price_cents": 4200,
+      "discount_percent": 10,
+      "line_total_cents": 37800
+    },
+    {
+      "order_id": "O0069",
+      "product_id": "P008",
+      "quantity": 3,
+      "unit_price_cents": 9600,
+      "discount_percent": 10,
+      "line_total_cents": 25920
+    },
+    {
+      "order_id": "O0070",
+      "product_id": "P003",
+      "quantity": 4,
+      "unit_price_cents": 8900,
+      "discount_percent": 5,
+      "line_total_cents": 33820
+    },
+    {
+      "order_id": "O0070",
+      "product_id": "P006",
+      "quantity": 7,
+      "unit_price_cents": 5400,
+      "discount_percent": 10,
+      "line_total_cents": 34020
+    },
+    {
+      "order_id": "O0071",
+      "product_id": "P005",
+      "quantity": 7,
+      "unit_price_cents": 13800,
+      "discount_percent": 5,
+      "line_total_cents": 91770
+    },
+    {
+      "order_id": "O0071",
+      "product_id": "P002",
+      "quantity": 15,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 63000
+    },
+    {
+      "order_id": "O0072",
+      "product_id": "P003",
+      "quantity": 7,
+      "unit_price_cents": 8900,
+      "discount_percent": 10,
+      "line_total_cents": 56070
+    },
+    {
+      "order_id": "O0073",
+      "product_id": "P008",
+      "quantity": 15,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 144000
+    },
+    {
+      "order_id": "O0073",
+      "product_id": "P006",
+      "quantity": 8,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 43200
+    },
+    {
+      "order_id": "O0074",
+      "product_id": "P007",
+      "quantity": 11,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 123200
+    },
+    {
+      "order_id": "O0075",
+      "product_id": "P002",
+      "quantity": 11,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 46200
+    },
+    {
+      "order_id": "O0075",
+      "product_id": "P008",
+      "quantity": 6,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 57600
+    },
+    {
+      "order_id": "O0076",
+      "product_id": "P007",
+      "quantity": 11,
+      "unit_price_cents": 11200,
+      "discount_percent": 10,
+      "line_total_cents": 110880
+    },
+    {
+      "order_id": "O0077",
+      "product_id": "P004",
+      "quantity": 7,
+      "unit_price_cents": 18000,
+      "discount_percent": 5,
+      "line_total_cents": 119700
+    },
+    {
+      "order_id": "O0077",
+      "product_id": "P006",
+      "quantity": 11,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 59400
+    },
+    {
+      "order_id": "O0078",
+      "product_id": "P007",
+      "quantity": 12,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 134400
+    },
+    {
+      "order_id": "O0078",
+      "product_id": "P003",
+      "quantity": 7,
+      "unit_price_cents": 8900,
+      "discount_percent": 0,
+      "line_total_cents": 62300
+    },
+    {
+      "order_id": "O0079",
+      "product_id": "P007",
+      "quantity": 10,
+      "unit_price_cents": 11200,
+      "discount_percent": 5,
+      "line_total_cents": 106400
+    },
+    {
+      "order_id": "O0080",
+      "product_id": "P002",
+      "quantity": 6,
+      "unit_price_cents": 4200,
+      "discount_percent": 10,
+      "line_total_cents": 22680
+    },
+    {
+      "order_id": "O0080",
+      "product_id": "P006",
+      "quantity": 5,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 27000
+    },
+    {
+      "order_id": "O0081",
+      "product_id": "P003",
+      "quantity": 7,
+      "unit_price_cents": 8900,
+      "discount_percent": 10,
+      "line_total_cents": 56070
+    },
+    {
+      "order_id": "O0082",
+      "product_id": "P003",
+      "quantity": 2,
+      "unit_price_cents": 8900,
+      "discount_percent": 10,
+      "line_total_cents": 16020
+    },
+    {
+      "order_id": "O0082",
+      "product_id": "P005",
+      "quantity": 5,
+      "unit_price_cents": 13800,
+      "discount_percent": 10,
+      "line_total_cents": 62100
+    },
+    {
+      "order_id": "O0082",
+      "product_id": "P007",
+      "quantity": 13,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 145600
+    },
+    {
+      "order_id": "O0083",
+      "product_id": "P005",
+      "quantity": 11,
+      "unit_price_cents": 13800,
+      "discount_percent": 5,
+      "line_total_cents": 144210
+    },
+    {
+      "order_id": "O0083",
+      "product_id": "P001",
+      "quantity": 2,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 15600
+    },
+    {
+      "order_id": "O0084",
+      "product_id": "P008",
+      "quantity": 4,
+      "unit_price_cents": 9600,
+      "discount_percent": 10,
+      "line_total_cents": 34560
+    },
+    {
+      "order_id": "O0084",
+      "product_id": "P003",
+      "quantity": 2,
+      "unit_price_cents": 8900,
+      "discount_percent": 5,
+      "line_total_cents": 16910
+    },
+    {
+      "order_id": "O0085",
+      "product_id": "P004",
+      "quantity": 10,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 180000
+    },
+    {
+      "order_id": "O0085",
+      "product_id": "P006",
+      "quantity": 4,
+      "unit_price_cents": 5400,
+      "discount_percent": 5,
+      "line_total_cents": 20520
+    },
+    {
+      "order_id": "O0086",
+      "product_id": "P007",
+      "quantity": 9,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 100800
+    },
+    {
+      "order_id": "O0087",
+      "product_id": "P003",
+      "quantity": 9,
+      "unit_price_cents": 8900,
+      "discount_percent": 0,
+      "line_total_cents": 80100
+    },
+    {
+      "order_id": "O0087",
+      "product_id": "P007",
+      "quantity": 13,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 145600
+    },
+    {
+      "order_id": "O0087",
+      "product_id": "P005",
+      "quantity": 5,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 69000
+    },
+    {
+      "order_id": "O0088",
+      "product_id": "P001",
+      "quantity": 7,
+      "unit_price_cents": 7800,
+      "discount_percent": 5,
+      "line_total_cents": 51870
+    },
+    {
+      "order_id": "O0088",
+      "product_id": "P008",
+      "quantity": 11,
+      "unit_price_cents": 9600,
+      "discount_percent": 5,
+      "line_total_cents": 100320
+    },
+    {
+      "order_id": "O0088",
+      "product_id": "P004",
+      "quantity": 15,
+      "unit_price_cents": 18000,
+      "discount_percent": 5,
+      "line_total_cents": 256500
+    },
+    {
+      "order_id": "O0089",
+      "product_id": "P007",
+      "quantity": 9,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 100800
+    },
+    {
+      "order_id": "O0089",
+      "product_id": "P005",
+      "quantity": 15,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 207000
+    },
+    {
+      "order_id": "O0089",
+      "product_id": "P008",
+      "quantity": 12,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 115200
+    },
+    {
+      "order_id": "O0090",
+      "product_id": "P001",
+      "quantity": 15,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 117000
+    },
+    {
+      "order_id": "O0090",
+      "product_id": "P008",
+      "quantity": 7,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 67200
+    },
+    {
+      "order_id": "O0091",
+      "product_id": "P008",
+      "quantity": 10,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 96000
+    },
+    {
+      "order_id": "O0091",
+      "product_id": "P007",
+      "quantity": 3,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 33600
+    },
+    {
+      "order_id": "O0092",
+      "product_id": "P006",
+      "quantity": 7,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 37800
+    },
+    {
+      "order_id": "O0093",
+      "product_id": "P004",
+      "quantity": 4,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 72000
+    },
+    {
+      "order_id": "O0094",
+      "product_id": "P007",
+      "quantity": 9,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 100800
+    },
+    {
+      "order_id": "O0094",
+      "product_id": "P006",
+      "quantity": 9,
+      "unit_price_cents": 5400,
+      "discount_percent": 5,
+      "line_total_cents": 46170
+    },
+    {
+      "order_id": "O0095",
+      "product_id": "P004",
+      "quantity": 6,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 108000
+    },
+    {
+      "order_id": "O0096",
+      "product_id": "P001",
+      "quantity": 8,
+      "unit_price_cents": 7800,
+      "discount_percent": 5,
+      "line_total_cents": 59280
+    },
+    {
+      "order_id": "O0096",
+      "product_id": "P008",
+      "quantity": 4,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 38400
+    },
+    {
+      "order_id": "O0096",
+      "product_id": "P005",
+      "quantity": 10,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 138000
+    },
+    {
+      "order_id": "O0097",
+      "product_id": "P004",
+      "quantity": 7,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 126000
+    },
+    {
+      "order_id": "O0097",
+      "product_id": "P005",
+      "quantity": 10,
+      "unit_price_cents": 13800,
+      "discount_percent": 5,
+      "line_total_cents": 131100
+    },
+    {
+      "order_id": "O0097",
+      "product_id": "P003",
+      "quantity": 15,
+      "unit_price_cents": 8900,
+      "discount_percent": 0,
+      "line_total_cents": 133500
+    },
+    {
+      "order_id": "O0098",
+      "product_id": "P002",
+      "quantity": 4,
+      "unit_price_cents": 4200,
+      "discount_percent": 5,
+      "line_total_cents": 15960
+    },
+    {
+      "order_id": "O0099",
+      "product_id": "P003",
+      "quantity": 12,
+      "unit_price_cents": 8900,
+      "discount_percent": 5,
+      "line_total_cents": 101460
+    },
+    {
+      "order_id": "O0099",
+      "product_id": "P005",
+      "quantity": 12,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 165600
+    },
+    {
+      "order_id": "O0099",
+      "product_id": "P001",
+      "quantity": 15,
+      "unit_price_cents": 7800,
+      "discount_percent": 10,
+      "line_total_cents": 105300
+    },
+    {
+      "order_id": "O0100",
+      "product_id": "P005",
+      "quantity": 13,
+      "unit_price_cents": 13800,
+      "discount_percent": 5,
+      "line_total_cents": 170430
+    },
+    {
+      "order_id": "O0100",
+      "product_id": "P002",
+      "quantity": 2,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 8400
+    },
+    {
+      "order_id": "O0100",
+      "product_id": "P004",
+      "quantity": 12,
+      "unit_price_cents": 18000,
+      "discount_percent": 0,
+      "line_total_cents": 216000
+    },
+    {
+      "order_id": "O0101",
+      "product_id": "P004",
+      "quantity": 10,
+      "unit_price_cents": 18000,
+      "discount_percent": 5,
+      "line_total_cents": 171000
+    },
+    {
+      "order_id": "O0102",
+      "product_id": "P003",
+      "quantity": 8,
+      "unit_price_cents": 8900,
+      "discount_percent": 10,
+      "line_total_cents": 64080
+    },
+    {
+      "order_id": "O0102",
+      "product_id": "P008",
+      "quantity": 14,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 134400
+    },
+    {
+      "order_id": "O0103",
+      "product_id": "P005",
+      "quantity": 2,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 27600
+    },
+    {
+      "order_id": "O0104",
+      "product_id": "P002",
+      "quantity": 3,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 12600
+    },
+    {
+      "order_id": "O0105",
+      "product_id": "P005",
+      "quantity": 12,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 165600
+    },
+    {
+      "order_id": "O0106",
+      "product_id": "P001",
+      "quantity": 5,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 39000
+    },
+    {
+      "order_id": "O0106",
+      "product_id": "P007",
+      "quantity": 9,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 100800
+    },
+    {
+      "order_id": "O0107",
+      "product_id": "P006",
+      "quantity": 11,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 59400
+    },
+    {
+      "order_id": "O0108",
+      "product_id": "P003",
+      "quantity": 10,
+      "unit_price_cents": 8900,
+      "discount_percent": 0,
+      "line_total_cents": 89000
+    },
+    {
+      "order_id": "O0108",
+      "product_id": "P008",
+      "quantity": 9,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 86400
+    },
+    {
+      "order_id": "O0108",
+      "product_id": "P005",
+      "quantity": 10,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 138000
+    },
+    {
+      "order_id": "O0109",
+      "product_id": "P006",
+      "quantity": 4,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 21600
+    },
+    {
+      "order_id": "O0110",
+      "product_id": "P005",
+      "quantity": 15,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 207000
+    },
+    {
+      "order_id": "O0111",
+      "product_id": "P005",
+      "quantity": 15,
+      "unit_price_cents": 13800,
+      "discount_percent": 10,
+      "line_total_cents": 186300
+    },
+    {
+      "order_id": "O0111",
+      "product_id": "P007",
+      "quantity": 15,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 168000
+    },
+    {
+      "order_id": "O0112",
+      "product_id": "P004",
+      "quantity": 5,
+      "unit_price_cents": 18000,
+      "discount_percent": 5,
+      "line_total_cents": 85500
+    },
+    {
+      "order_id": "O0112",
+      "product_id": "P006",
+      "quantity": 7,
+      "unit_price_cents": 5400,
+      "discount_percent": 0,
+      "line_total_cents": 37800
+    },
+    {
+      "order_id": "O0112",
+      "product_id": "P002",
+      "quantity": 7,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 29400
+    },
+    {
+      "order_id": "O0113",
+      "product_id": "P005",
+      "quantity": 14,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 193200
+    },
+    {
+      "order_id": "O0113",
+      "product_id": "P008",
+      "quantity": 11,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 105600
+    },
+    {
+      "order_id": "O0114",
+      "product_id": "P007",
+      "quantity": 11,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 123200
+    },
+    {
+      "order_id": "O0114",
+      "product_id": "P002",
+      "quantity": 3,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 12600
+    },
+    {
+      "order_id": "O0115",
+      "product_id": "P003",
+      "quantity": 12,
+      "unit_price_cents": 8900,
+      "discount_percent": 0,
+      "line_total_cents": 106800
+    },
+    {
+      "order_id": "O0116",
+      "product_id": "P003",
+      "quantity": 4,
+      "unit_price_cents": 8900,
+      "discount_percent": 0,
+      "line_total_cents": 35600
+    },
+    {
+      "order_id": "O0116",
+      "product_id": "P001",
+      "quantity": 8,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 62400
+    },
+    {
+      "order_id": "O0116",
+      "product_id": "P008",
+      "quantity": 11,
+      "unit_price_cents": 9600,
+      "discount_percent": 0,
+      "line_total_cents": 105600
+    },
+    {
+      "order_id": "O0117",
+      "product_id": "P004",
+      "quantity": 2,
+      "unit_price_cents": 18000,
+      "discount_percent": 10,
+      "line_total_cents": 32400
+    },
+    {
+      "order_id": "O0117",
+      "product_id": "P002",
+      "quantity": 6,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 25200
+    },
+    {
+      "order_id": "O0118",
+      "product_id": "P007",
+      "quantity": 13,
+      "unit_price_cents": 11200,
+      "discount_percent": 0,
+      "line_total_cents": 145600
+    },
+    {
+      "order_id": "O0119",
+      "product_id": "P002",
+      "quantity": 7,
+      "unit_price_cents": 4200,
+      "discount_percent": 0,
+      "line_total_cents": 29400
+    },
+    {
+      "order_id": "O0120",
+      "product_id": "P003",
+      "quantity": 12,
+      "unit_price_cents": 8900,
+      "discount_percent": 0,
+      "line_total_cents": 106800
+    },
+    {
+      "order_id": "O0120",
+      "product_id": "P005",
+      "quantity": 12,
+      "unit_price_cents": 13800,
+      "discount_percent": 0,
+      "line_total_cents": 165600
+    },
+    {
+      "order_id": "O0120",
+      "product_id": "P001",
+      "quantity": 6,
+      "unit_price_cents": 7800,
+      "discount_percent": 0,
+      "line_total_cents": 46800
+    }
+  ],
+  "invoices": [
+    {
+      "id": "I0001",
+      "order_id": "O0001",
+      "issue_date": "2026-01-14",
+      "due_date": "2026-01-29",
+      "amount_cents": 236700
+    },
+    {
+      "id": "I0002",
+      "order_id": "O0002",
+      "issue_date": "2026-07-13",
+      "due_date": "2026-08-12",
+      "amount_cents": 136800
+    },
+    {
+      "id": "I0003",
+      "order_id": "O0003",
+      "issue_date": "2026-08-30",
+      "due_date": "2026-09-14",
+      "amount_cents": 43400
+    },
+    {
+      "id": "I0004",
+      "order_id": "O0004",
+      "issue_date": "2026-08-07",
+      "due_date": "2026-08-22",
+      "amount_cents": 8400
+    },
+    {
+      "id": "I0005",
+      "order_id": "O0005",
+      "issue_date": "2026-01-20",
+      "due_date": "2026-03-06",
+      "amount_cents": 218490
+    },
+    {
+      "id": "I0006",
+      "order_id": "O0006",
+      "issue_date": "2026-10-16",
+      "due_date": "2026-11-30",
+      "amount_cents": 310070
+    },
+    {
+      "id": "I0007",
+      "order_id": "O0007",
+      "issue_date": "2026-07-17",
+      "due_date": "2026-08-16",
+      "amount_cents": 108000
+    },
+    {
+      "id": "I0008",
+      "order_id": "O0008",
+      "issue_date": "2026-07-21",
+      "due_date": "2026-08-20",
+      "amount_cents": 87600
+    },
+    {
+      "id": "I0009",
+      "order_id": "O0009",
+      "issue_date": "2026-09-11",
+      "due_date": "2026-09-26",
+      "amount_cents": 271840
+    },
+    {
+      "id": "I0010",
+      "order_id": "O0010",
+      "issue_date": "2026-02-23",
+      "due_date": "2026-03-25",
+      "amount_cents": 177120
+    },
+    {
+      "id": "I0011",
+      "order_id": "O0011",
+      "issue_date": "2026-04-19",
+      "due_date": "2026-06-03",
+      "amount_cents": 156800
+    },
+    {
+      "id": "I0012",
+      "order_id": "O0012",
+      "issue_date": "2026-03-23",
+      "due_date": "2026-05-07",
+      "amount_cents": 161040
+    },
+    {
+      "id": "I0014",
+      "order_id": "O0014",
+      "issue_date": "2026-07-08",
+      "due_date": "2026-08-22",
+      "amount_cents": 24840
+    },
+    {
+      "id": "I0015",
+      "order_id": "O0015",
+      "issue_date": "2026-04-15",
+      "due_date": "2026-05-15",
+      "amount_cents": 393670
+    },
+    {
+      "id": "I0016",
+      "order_id": "O0016",
+      "issue_date": "2026-06-17",
+      "due_date": "2026-07-02",
+      "amount_cents": 185130
+    },
+    {
+      "id": "I0017",
+      "order_id": "O0017",
+      "issue_date": "2026-08-12",
+      "due_date": "2026-09-11",
+      "amount_cents": 319000
+    },
+    {
+      "id": "I0018",
+      "order_id": "O0018",
+      "issue_date": "2026-05-21",
+      "due_date": "2026-06-20",
+      "amount_cents": 70680
+    },
+    {
+      "id": "I0019",
+      "order_id": "O0019",
+      "issue_date": "2026-07-06",
+      "due_date": "2026-07-21",
+      "amount_cents": 162900
+    },
+    {
+      "id": "I0020",
+      "order_id": "O0020",
+      "issue_date": "2026-09-09",
+      "due_date": "2026-10-24",
+      "amount_cents": 217600
+    },
+    {
+      "id": "I0021",
+      "order_id": "O0021",
+      "issue_date": "2026-05-09",
+      "due_date": "2026-06-23",
+      "amount_cents": 54000
+    },
+    {
+      "id": "I0022",
+      "order_id": "O0022",
+      "issue_date": "2026-04-19",
+      "due_date": "2026-05-19",
+      "amount_cents": 133910
+    },
+    {
+      "id": "I0024",
+      "order_id": "O0024",
+      "issue_date": "2026-05-20",
+      "due_date": "2026-07-04",
+      "amount_cents": 144840
+    },
+    {
+      "id": "I0025",
+      "order_id": "O0025",
+      "issue_date": "2026-03-20",
+      "due_date": "2026-05-04",
+      "amount_cents": 119700
+    },
+    {
+      "id": "I0027",
+      "order_id": "O0027",
+      "issue_date": "2026-09-01",
+      "due_date": "2026-10-01",
+      "amount_cents": 174300
+    },
+    {
+      "id": "I0028",
+      "order_id": "O0028",
+      "issue_date": "2026-07-28",
+      "due_date": "2026-09-11",
+      "amount_cents": 126000
+    },
+    {
+      "id": "I0029",
+      "order_id": "O0029",
+      "issue_date": "2026-09-08",
+      "due_date": "2026-10-08",
+      "amount_cents": 110880
+    },
+    {
+      "id": "I0030",
+      "order_id": "O0030",
+      "issue_date": "2026-09-06",
+      "due_date": "2026-10-06",
+      "amount_cents": 91260
+    },
+    {
+      "id": "I0031",
+      "order_id": "O0031",
+      "issue_date": "2026-07-28",
+      "due_date": "2026-09-11",
+      "amount_cents": 16800
+    },
+    {
+      "id": "I0032",
+      "order_id": "O0032",
+      "issue_date": "2026-09-19",
+      "due_date": "2026-10-19",
+      "amount_cents": 207750
+    },
+    {
+      "id": "I0033",
+      "order_id": "O0033",
+      "issue_date": "2026-01-31",
+      "due_date": "2026-03-02",
+      "amount_cents": 133800
+    },
+    {
+      "id": "I0034",
+      "order_id": "O0034",
+      "issue_date": "2026-06-03",
+      "due_date": "2026-06-18",
+      "amount_cents": 215700
+    },
+    {
+      "id": "I0035",
+      "order_id": "O0035",
+      "issue_date": "2026-07-05",
+      "due_date": "2026-08-04",
+      "amount_cents": 212820
+    },
+    {
+      "id": "I0036",
+      "order_id": "O0036",
+      "issue_date": "2026-05-02",
+      "due_date": "2026-06-16",
+      "amount_cents": 256200
+    },
+    {
+      "id": "I0037",
+      "order_id": "O0037",
+      "issue_date": "2026-09-23",
+      "due_date": "2026-10-23",
+      "amount_cents": 57600
+    },
+    {
+      "id": "I0038",
+      "order_id": "O0038",
+      "issue_date": "2026-03-16",
+      "due_date": "2026-04-15",
+      "amount_cents": 217205
+    },
+    {
+      "id": "I0040",
+      "order_id": "O0040",
+      "issue_date": "2026-02-16",
+      "due_date": "2026-03-18",
+      "amount_cents": 264600
+    },
+    {
+      "id": "I0041",
+      "order_id": "O0041",
+      "issue_date": "2026-06-02",
+      "due_date": "2026-07-02",
+      "amount_cents": 271200
+    },
+    {
+      "id": "I0042",
+      "order_id": "O0042",
+      "issue_date": "2026-05-27",
+      "due_date": "2026-07-11",
+      "amount_cents": 220920
+    },
+    {
+      "id": "I0043",
+      "order_id": "O0043",
+      "issue_date": "2026-10-02",
+      "due_date": "2026-11-01",
+      "amount_cents": 112140
+    },
+    {
+      "id": "I0044",
+      "order_id": "O0044",
+      "issue_date": "2026-04-01",
+      "due_date": "2026-05-01",
+      "amount_cents": 117000
+    },
+    {
+      "id": "I0045",
+      "order_id": "O0045",
+      "issue_date": "2026-07-28",
+      "due_date": "2026-09-11",
+      "amount_cents": 135840
+    },
+    {
+      "id": "I0047",
+      "order_id": "O0047",
+      "issue_date": "2026-07-23",
+      "due_date": "2026-08-22",
+      "amount_cents": 70200
+    },
+    {
+      "id": "I0048",
+      "order_id": "O0048",
+      "issue_date": "2026-02-18",
+      "due_date": "2026-03-20",
+      "amount_cents": 284250
+    },
+    {
+      "id": "I0049",
+      "order_id": "O0049",
+      "issue_date": "2026-06-06",
+      "due_date": "2026-07-21",
+      "amount_cents": 131100
+    },
+    {
+      "id": "I0050",
+      "order_id": "O0050",
+      "issue_date": "2026-02-19",
+      "due_date": "2026-03-06",
+      "amount_cents": 129600
+    },
+    {
+      "id": "I0051",
+      "order_id": "O0051",
+      "issue_date": "2026-10-14",
+      "due_date": "2026-11-13",
+      "amount_cents": 242820
+    },
+    {
+      "id": "I0053",
+      "order_id": "O0053",
+      "issue_date": "2026-04-29",
+      "due_date": "2026-05-14",
+      "amount_cents": 185520
+    },
+    {
+      "id": "I0054",
+      "order_id": "O0054",
+      "issue_date": "2026-07-24",
+      "due_date": "2026-08-23",
+      "amount_cents": 44480
+    },
+    {
+      "id": "I0055",
+      "order_id": "O0055",
+      "issue_date": "2026-05-10",
+      "due_date": "2026-06-24",
+      "amount_cents": 224400
+    },
+    {
+      "id": "I0056",
+      "order_id": "O0056",
+      "issue_date": "2026-07-18",
+      "due_date": "2026-09-01",
+      "amount_cents": 199800
+    },
+    {
+      "id": "I0057",
+      "order_id": "O0057",
+      "issue_date": "2026-02-07",
+      "due_date": "2026-03-24",
+      "amount_cents": 302400
+    },
+    {
+      "id": "I0058",
+      "order_id": "O0058",
+      "issue_date": "2026-07-23",
+      "due_date": "2026-08-22",
+      "amount_cents": 26700
+    },
+    {
+      "id": "I0059",
+      "order_id": "O0059",
+      "issue_date": "2026-02-20",
+      "due_date": "2026-03-22",
+      "amount_cents": 322600
+    },
+    {
+      "id": "I0060",
+      "order_id": "O0060",
+      "issue_date": "2026-04-08",
+      "due_date": "2026-05-08",
+      "amount_cents": 100800
+    },
+    {
+      "id": "I0061",
+      "order_id": "O0061",
+      "issue_date": "2026-03-10",
+      "due_date": "2026-04-09",
+      "amount_cents": 58800
+    },
+    {
+      "id": "I0062",
+      "order_id": "O0062",
+      "issue_date": "2026-08-24",
+      "due_date": "2026-10-08",
+      "amount_cents": 72000
+    },
+    {
+      "id": "I0063",
+      "order_id": "O0063",
+      "issue_date": "2026-03-07",
+      "due_date": "2026-04-06",
+      "amount_cents": 183450
+    },
+    {
+      "id": "I0064",
+      "order_id": "O0064",
+      "issue_date": "2026-03-23",
+      "due_date": "2026-04-22",
+      "amount_cents": 145140
+    },
+    {
+      "id": "I0066",
+      "order_id": "O0066",
+      "issue_date": "2026-01-21",
+      "due_date": "2026-02-20",
+      "amount_cents": 222740
+    },
+    {
+      "id": "I0067",
+      "order_id": "O0067",
+      "issue_date": "2026-08-05",
+      "due_date": "2026-09-04",
+      "amount_cents": 193620
+    },
+    {
+      "id": "I0068",
+      "order_id": "O0068",
+      "issue_date": "2026-03-24",
+      "due_date": "2026-04-23",
+      "amount_cents": 108000
+    },
+    {
+      "id": "I0070",
+      "order_id": "O0070",
+      "issue_date": "2026-09-10",
+      "due_date": "2026-09-25",
+      "amount_cents": 67840
+    },
+    {
+      "id": "I0071",
+      "order_id": "O0071",
+      "issue_date": "2026-07-19",
+      "due_date": "2026-08-18",
+      "amount_cents": 154770
+    },
+    {
+      "id": "I0072",
+      "order_id": "O0072",
+      "issue_date": "2026-01-11",
+      "due_date": "2026-02-25",
+      "amount_cents": 56070
+    },
+    {
+      "id": "I0073",
+      "order_id": "O0073",
+      "issue_date": "2026-07-29",
+      "due_date": "2026-08-28",
+      "amount_cents": 187200
+    },
+    {
+      "id": "I0074",
+      "order_id": "O0074",
+      "issue_date": "2026-08-25",
+      "due_date": "2026-09-24",
+      "amount_cents": 123200
+    },
+    {
+      "id": "I0075",
+      "order_id": "O0075",
+      "issue_date": "2026-04-05",
+      "due_date": "2026-05-05",
+      "amount_cents": 103800
+    },
+    {
+      "id": "I0076",
+      "order_id": "O0076",
+      "issue_date": "2026-10-07",
+      "due_date": "2026-11-21",
+      "amount_cents": 110880
+    },
+    {
+      "id": "I0077",
+      "order_id": "O0077",
+      "issue_date": "2026-01-12",
+      "due_date": "2026-02-11",
+      "amount_cents": 179100
+    },
+    {
+      "id": "I0079",
+      "order_id": "O0079",
+      "issue_date": "2026-09-29",
+      "due_date": "2026-11-13",
+      "amount_cents": 106400
+    },
+    {
+      "id": "I0080",
+      "order_id": "O0080",
+      "issue_date": "2026-05-20",
+      "due_date": "2026-06-19",
+      "amount_cents": 49680
+    },
+    {
+      "id": "I0081",
+      "order_id": "O0081",
+      "issue_date": "2026-09-16",
+      "due_date": "2026-10-01",
+      "amount_cents": 56070
+    },
+    {
+      "id": "I0082",
+      "order_id": "O0082",
+      "issue_date": "2026-02-25",
+      "due_date": "2026-03-12",
+      "amount_cents": 223720
+    },
+    {
+      "id": "I0083",
+      "order_id": "O0083",
+      "issue_date": "2026-07-14",
+      "due_date": "2026-08-13",
+      "amount_cents": 159810
+    },
+    {
+      "id": "I0084",
+      "order_id": "O0084",
+      "issue_date": "2026-09-23",
+      "due_date": "2026-10-08",
+      "amount_cents": 51470
+    },
+    {
+      "id": "I0085",
+      "order_id": "O0085",
+      "issue_date": "2026-04-03",
+      "due_date": "2026-04-18",
+      "amount_cents": 200520
+    },
+    {
+      "id": "I0086",
+      "order_id": "O0086",
+      "issue_date": "2026-02-22",
+      "due_date": "2026-04-08",
+      "amount_cents": 100800
+    },
+    {
+      "id": "I0087",
+      "order_id": "O0087",
+      "issue_date": "2026-02-19",
+      "due_date": "2026-03-21",
+      "amount_cents": 294700
+    },
+    {
+      "id": "I0088",
+      "order_id": "O0088",
+      "issue_date": "2026-04-15",
+      "due_date": "2026-05-15",
+      "amount_cents": 408690
+    },
+    {
+      "id": "I0089",
+      "order_id": "O0089",
+      "issue_date": "2026-08-21",
+      "due_date": "2026-09-20",
+      "amount_cents": 423000
+    },
+    {
+      "id": "I0090",
+      "order_id": "O0090",
+      "issue_date": "2026-02-13",
+      "due_date": "2026-02-28",
+      "amount_cents": 184200
+    },
+    {
+      "id": "I0093",
+      "order_id": "O0093",
+      "issue_date": "2026-03-09",
+      "due_date": "2026-04-08",
+      "amount_cents": 72000
+    },
+    {
+      "id": "I0094",
+      "order_id": "O0094",
+      "issue_date": "2026-05-18",
+      "due_date": "2026-06-17",
+      "amount_cents": 146970
+    },
+    {
+      "id": "I0095",
+      "order_id": "O0095",
+      "issue_date": "2026-04-19",
+      "due_date": "2026-05-19",
+      "amount_cents": 108000
+    },
+    {
+      "id": "I0096",
+      "order_id": "O0096",
+      "issue_date": "2026-07-29",
+      "due_date": "2026-08-13",
+      "amount_cents": 235680
+    },
+    {
+      "id": "I0097",
+      "order_id": "O0097",
+      "issue_date": "2026-06-26",
+      "due_date": "2026-07-26",
+      "amount_cents": 390600
+    },
+    {
+      "id": "I0098",
+      "order_id": "O0098",
+      "issue_date": "2026-02-26",
+      "due_date": "2026-04-12",
+      "amount_cents": 15960
+    },
+    {
+      "id": "I0099",
+      "order_id": "O0099",
+      "issue_date": "2026-01-29",
+      "due_date": "2026-02-13",
+      "amount_cents": 372360
+    },
+    {
+      "id": "I0100",
+      "order_id": "O0100",
+      "issue_date": "2026-02-15",
+      "due_date": "2026-03-17",
+      "amount_cents": 394830
+    },
+    {
+      "id": "I0101",
+      "order_id": "O0101",
+      "issue_date": "2026-05-08",
+      "due_date": "2026-06-07",
+      "amount_cents": 171000
+    },
+    {
+      "id": "I0102",
+      "order_id": "O0102",
+      "issue_date": "2026-10-03",
+      "due_date": "2026-10-18",
+      "amount_cents": 198480
+    },
+    {
+      "id": "I0103",
+      "order_id": "O0103",
+      "issue_date": "2026-09-27",
+      "due_date": "2026-11-11",
+      "amount_cents": 27600
+    },
+    {
+      "id": "I0105",
+      "order_id": "O0105",
+      "issue_date": "2026-03-19",
+      "due_date": "2026-04-18",
+      "amount_cents": 165600
+    },
+    {
+      "id": "I0106",
+      "order_id": "O0106",
+      "issue_date": "2026-06-03",
+      "due_date": "2026-06-18",
+      "amount_cents": 139800
+    },
+    {
+      "id": "I0107",
+      "order_id": "O0107",
+      "issue_date": "2026-05-07",
+      "due_date": "2026-06-06",
+      "amount_cents": 59400
+    },
+    {
+      "id": "I0108",
+      "order_id": "O0108",
+      "issue_date": "2026-03-18",
+      "due_date": "2026-05-02",
+      "amount_cents": 313400
+    },
+    {
+      "id": "I0109",
+      "order_id": "O0109",
+      "issue_date": "2026-02-05",
+      "due_date": "2026-03-07",
+      "amount_cents": 21600
+    },
+    {
+      "id": "I0110",
+      "order_id": "O0110",
+      "issue_date": "2026-09-02",
+      "due_date": "2026-10-02",
+      "amount_cents": 207000
+    },
+    {
+      "id": "I0111",
+      "order_id": "O0111",
+      "issue_date": "2026-06-29",
+      "due_date": "2026-07-29",
+      "amount_cents": 354300
+    },
+    {
+      "id": "I0112",
+      "order_id": "O0112",
+      "issue_date": "2026-08-25",
+      "due_date": "2026-10-09",
+      "amount_cents": 152700
+    },
+    {
+      "id": "I0113",
+      "order_id": "O0113",
+      "issue_date": "2026-10-18",
+      "due_date": "2026-11-17",
+      "amount_cents": 298800
+    },
+    {
+      "id": "I0114",
+      "order_id": "O0114",
+      "issue_date": "2026-02-17",
+      "due_date": "2026-03-04",
+      "amount_cents": 135800
+    },
+    {
+      "id": "I0116",
+      "order_id": "O0116",
+      "issue_date": "2026-03-22",
+      "due_date": "2026-04-21",
+      "amount_cents": 203600
+    },
+    {
+      "id": "I0118",
+      "order_id": "O0118",
+      "issue_date": "2026-07-12",
+      "due_date": "2026-08-26",
+      "amount_cents": 145600
+    },
+    {
+      "id": "I0119",
+      "order_id": "O0119",
+      "issue_date": "2026-10-15",
+      "due_date": "2026-10-30",
+      "amount_cents": 29400
+    },
+    {
+      "id": "I0120",
+      "order_id": "O0120",
+      "issue_date": "2026-09-02",
+      "due_date": "2026-10-02",
+      "amount_cents": 319200
+    }
+  ],
+  "payments": [
+    {
+      "id": "PM0001",
+      "invoice_id": "I0001",
+      "payment_date": "2026-02-04",
+      "amount_cents": 236700,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0002",
+      "invoice_id": "I0002",
+      "payment_date": "2026-07-18",
+      "amount_cents": 136800,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0003",
+      "invoice_id": "I0003",
+      "payment_date": "2026-09-12",
+      "amount_cents": 43400,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0004",
+      "invoice_id": "I0004",
+      "payment_date": "2026-08-15",
+      "amount_cents": 8400,
+      "method": "card"
+    },
+    {
+      "id": "PM0005",
+      "invoice_id": "I0005",
+      "payment_date": "2026-02-27",
+      "amount_cents": 218490,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0008",
+      "invoice_id": "I0008",
+      "payment_date": "2026-07-28",
+      "amount_cents": 87600,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0009",
+      "invoice_id": "I0009",
+      "payment_date": "2026-09-23",
+      "amount_cents": 271840,
+      "method": "card"
+    },
+    {
+      "id": "PM0010",
+      "invoice_id": "I0010",
+      "payment_date": "2026-03-02",
+      "amount_cents": 177120,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0011",
+      "invoice_id": "I0011",
+      "payment_date": "2026-05-21",
+      "amount_cents": 78400,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0012",
+      "invoice_id": "I0012",
+      "payment_date": "2026-04-29",
+      "amount_cents": 161040,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0015",
+      "invoice_id": "I0015",
+      "payment_date": "2026-05-21",
+      "amount_cents": 393670,
+      "method": "card"
+    },
+    {
+      "id": "PM0016",
+      "invoice_id": "I0016",
+      "payment_date": "2026-07-20",
+      "amount_cents": 185130,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0017",
+      "invoice_id": "I0017",
+      "payment_date": "2026-09-04",
+      "amount_cents": 319000,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0018",
+      "invoice_id": "I0018",
+      "payment_date": "2026-07-04",
+      "amount_cents": 70680,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0019",
+      "invoice_id": "I0019",
+      "payment_date": "2026-07-31",
+      "amount_cents": 162900,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0020",
+      "invoice_id": "I0020",
+      "payment_date": "2026-09-28",
+      "amount_cents": 217600,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0022",
+      "invoice_id": "I0022",
+      "payment_date": "2026-05-14",
+      "amount_cents": 66955,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0024",
+      "invoice_id": "I0024",
+      "payment_date": "2026-05-23",
+      "amount_cents": 144840,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0025",
+      "invoice_id": "I0025",
+      "payment_date": "2026-05-15",
+      "amount_cents": 119700,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0027",
+      "invoice_id": "I0027",
+      "payment_date": "2026-09-20",
+      "amount_cents": 174300,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0029",
+      "invoice_id": "I0029",
+      "payment_date": "2026-09-21",
+      "amount_cents": 110880,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0030",
+      "invoice_id": "I0030",
+      "payment_date": "2026-10-17",
+      "amount_cents": 91260,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0031",
+      "invoice_id": "I0031",
+      "payment_date": "2026-08-16",
+      "amount_cents": 16800,
+      "method": "card"
+    },
+    {
+      "id": "PM0033",
+      "invoice_id": "I0033",
+      "payment_date": "2026-03-08",
+      "amount_cents": 66900,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0034",
+      "invoice_id": "I0034",
+      "payment_date": "2026-07-01",
+      "amount_cents": 215700,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0036",
+      "invoice_id": "I0036",
+      "payment_date": "2026-06-19",
+      "amount_cents": 256200,
+      "method": "card"
+    },
+    {
+      "id": "PM0038",
+      "invoice_id": "I0038",
+      "payment_date": "2026-04-20",
+      "amount_cents": 217205,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0040",
+      "invoice_id": "I0040",
+      "payment_date": "2026-03-26",
+      "amount_cents": 264600,
+      "method": "card"
+    },
+    {
+      "id": "PM0041",
+      "invoice_id": "I0041",
+      "payment_date": "2026-06-05",
+      "amount_cents": 271200,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0043",
+      "invoice_id": "I0043",
+      "payment_date": "2026-10-05",
+      "amount_cents": 112140,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0044",
+      "invoice_id": "I0044",
+      "payment_date": "2026-04-04",
+      "amount_cents": 58500,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0045",
+      "invoice_id": "I0045",
+      "payment_date": "2026-09-27",
+      "amount_cents": 135840,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0047",
+      "invoice_id": "I0047",
+      "payment_date": "2026-09-06",
+      "amount_cents": 70200,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0048",
+      "invoice_id": "I0048",
+      "payment_date": "2026-02-25",
+      "amount_cents": 284250,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0050",
+      "invoice_id": "I0050",
+      "payment_date": "2026-03-15",
+      "amount_cents": 129600,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0051",
+      "invoice_id": "I0051",
+      "payment_date": "2026-10-20",
+      "amount_cents": 242820,
+      "method": "card"
+    },
+    {
+      "id": "PM0053",
+      "invoice_id": "I0053",
+      "payment_date": "2026-05-16",
+      "amount_cents": 185520,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0054",
+      "invoice_id": "I0054",
+      "payment_date": "2026-09-03",
+      "amount_cents": 44480,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0055",
+      "invoice_id": "I0055",
+      "payment_date": "2026-05-24",
+      "amount_cents": 112200,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0057",
+      "invoice_id": "I0057",
+      "payment_date": "2026-03-31",
+      "amount_cents": 302400,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0058",
+      "invoice_id": "I0058",
+      "payment_date": "2026-08-05",
+      "amount_cents": 26700,
+      "method": "card"
+    },
+    {
+      "id": "PM0059",
+      "invoice_id": "I0059",
+      "payment_date": "2026-03-16",
+      "amount_cents": 322600,
+      "method": "card"
+    },
+    {
+      "id": "PM0060",
+      "invoice_id": "I0060",
+      "payment_date": "2026-04-16",
+      "amount_cents": 100800,
+      "method": "card"
+    },
+    {
+      "id": "PM0061",
+      "invoice_id": "I0061",
+      "payment_date": "2026-03-27",
+      "amount_cents": 58800,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0062",
+      "invoice_id": "I0062",
+      "payment_date": "2026-10-11",
+      "amount_cents": 72000,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0064",
+      "invoice_id": "I0064",
+      "payment_date": "2026-04-11",
+      "amount_cents": 145140,
+      "method": "card"
+    },
+    {
+      "id": "PM0066",
+      "invoice_id": "I0066",
+      "payment_date": "2026-01-30",
+      "amount_cents": 111370,
+      "method": "card"
+    },
+    {
+      "id": "PM0067",
+      "invoice_id": "I0067",
+      "payment_date": "2026-09-11",
+      "amount_cents": 193620,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0068",
+      "invoice_id": "I0068",
+      "payment_date": "2026-04-23",
+      "amount_cents": 108000,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0071",
+      "invoice_id": "I0071",
+      "payment_date": "2026-08-07",
+      "amount_cents": 154770,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0072",
+      "invoice_id": "I0072",
+      "payment_date": "2026-02-05",
+      "amount_cents": 56070,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0073",
+      "invoice_id": "I0073",
+      "payment_date": "2026-08-26",
+      "amount_cents": 187200,
+      "method": "card"
+    },
+    {
+      "id": "PM0074",
+      "invoice_id": "I0074",
+      "payment_date": "2026-10-03",
+      "amount_cents": 123200,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0075",
+      "invoice_id": "I0075",
+      "payment_date": "2026-05-03",
+      "amount_cents": 103800,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0080",
+      "invoice_id": "I0080",
+      "payment_date": "2026-06-05",
+      "amount_cents": 49680,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0081",
+      "invoice_id": "I0081",
+      "payment_date": "2026-09-24",
+      "amount_cents": 56070,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0082",
+      "invoice_id": "I0082",
+      "payment_date": "2026-03-22",
+      "amount_cents": 223720,
+      "method": "card"
+    },
+    {
+      "id": "PM0083",
+      "invoice_id": "I0083",
+      "payment_date": "2026-08-02",
+      "amount_cents": 159810,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0085",
+      "invoice_id": "I0085",
+      "payment_date": "2026-04-11",
+      "amount_cents": 200520,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0086",
+      "invoice_id": "I0086",
+      "payment_date": "2026-04-13",
+      "amount_cents": 100800,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0087",
+      "invoice_id": "I0087",
+      "payment_date": "2026-03-21",
+      "amount_cents": 294700,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0088",
+      "invoice_id": "I0088",
+      "payment_date": "2026-05-31",
+      "amount_cents": 204345,
+      "method": "card"
+    },
+    {
+      "id": "PM0089",
+      "invoice_id": "I0089",
+      "payment_date": "2026-08-29",
+      "amount_cents": 423000,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0090",
+      "invoice_id": "I0090",
+      "payment_date": "2026-03-13",
+      "amount_cents": 184200,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0093",
+      "invoice_id": "I0093",
+      "payment_date": "2026-03-18",
+      "amount_cents": 72000,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0094",
+      "invoice_id": "I0094",
+      "payment_date": "2026-06-17",
+      "amount_cents": 146970,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0095",
+      "invoice_id": "I0095",
+      "payment_date": "2026-06-06",
+      "amount_cents": 108000,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0096",
+      "invoice_id": "I0096",
+      "payment_date": "2026-08-03",
+      "amount_cents": 235680,
+      "method": "card"
+    },
+    {
+      "id": "PM0097",
+      "invoice_id": "I0097",
+      "payment_date": "2026-07-23",
+      "amount_cents": 390600,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0099",
+      "invoice_id": "I0099",
+      "payment_date": "2026-02-22",
+      "amount_cents": 186180,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0100",
+      "invoice_id": "I0100",
+      "payment_date": "2026-03-31",
+      "amount_cents": 394830,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0101",
+      "invoice_id": "I0101",
+      "payment_date": "2026-05-28",
+      "amount_cents": 171000,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0103",
+      "invoice_id": "I0103",
+      "payment_date": "2026-10-03",
+      "amount_cents": 27600,
+      "method": "card"
+    },
+    {
+      "id": "PM0106",
+      "invoice_id": "I0106",
+      "payment_date": "2026-06-13",
+      "amount_cents": 139800,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0107",
+      "invoice_id": "I0107",
+      "payment_date": "2026-06-22",
+      "amount_cents": 59400,
+      "method": "card"
+    },
+    {
+      "id": "PM0108",
+      "invoice_id": "I0108",
+      "payment_date": "2026-05-11",
+      "amount_cents": 313400,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0109",
+      "invoice_id": "I0109",
+      "payment_date": "2026-02-14",
+      "amount_cents": 21600,
+      "method": "card"
+    },
+    {
+      "id": "PM0110",
+      "invoice_id": "I0110",
+      "payment_date": "2026-09-21",
+      "amount_cents": 103500,
+      "method": "bank_transfer"
+    },
+    {
+      "id": "PM0111",
+      "invoice_id": "I0111",
+      "payment_date": "2026-07-06",
+      "amount_cents": 354300,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0114",
+      "invoice_id": "I0114",
+      "payment_date": "2026-03-02",
+      "amount_cents": 135800,
+      "method": "card"
+    },
+    {
+      "id": "PM0116",
+      "invoice_id": "I0116",
+      "payment_date": "2026-05-08",
+      "amount_cents": 203600,
+      "method": "card"
+    },
+    {
+      "id": "PM0118",
+      "invoice_id": "I0118",
+      "payment_date": "2026-08-22",
+      "amount_cents": 145600,
+      "method": "boleto"
+    },
+    {
+      "id": "PM0120",
+      "invoice_id": "I0120",
+      "payment_date": "2026-10-07",
+      "amount_cents": 319200,
+      "method": "card"
+    }
+  ]
+}
