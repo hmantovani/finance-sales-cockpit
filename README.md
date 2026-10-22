@@ -2,6 +2,8 @@
 
 A browser-based portfolio demo for **Northstar Operations**, a fictional product business. Every customer, representative, product, order, invoice, payment, and adjustment is synthetic. The snapshot is fixed at 22 October 2026. No client information or real business impact is claimed.
 
+**Live dashboard:** [hmantovani.github.io/finance-sales-cockpit](https://hmantovani.github.io/finance-sales-cockpit/)
+
 ## Run locally
 
 Python 3.10+ generates, validates, and serves the app. Node 18+ is used for dashboard calculation tests. There are no package dependencies to install.
@@ -13,6 +15,10 @@ python -m http.server 8000
 ```
 
 Open `http://localhost:8000/dist/`. The committed `dist/data.json` lets you serve the dashboard immediately; regeneration reproduces the same snapshot. HTTP is required for the browser to fetch JSON.
+
+## Deployment
+
+GitHub Actions publishes the self-contained `dist/` folder to GitHub Pages on every push to `master`. The workflow is in `.github/workflows/deploy-pages.yml`; no build step or secret is needed. The public URL is linked above. The published snapshot remains static and synthetic.
 
 ## Walkthrough
 
