@@ -12,8 +12,8 @@ The finance and sales cockpit MVP is complete. All four initial tasks are done. 
 
 ## Next steps
 
-1. Review the dashboard and decide whether the portfolio presentation needs a deployment or additional polish.
-2. If expanding the model, consider returns, credit notes, partial fulfillment, and invoice line allocation of payments as separate tasks.
+1. Plan T-0005 by selecting the additional operational cases for the next release.
+2. Review the dashboard and decide whether the portfolio presentation needs a deployment or additional polish.
 
 ## Gotchas
 
